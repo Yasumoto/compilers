@@ -26,6 +26,7 @@ import Triangle.AbstractSyntaxTrees.CallCommand;
 import Triangle.AbstractSyntaxTrees.CallExpression;
 import Triangle.AbstractSyntaxTrees.CharacterExpression;
 import Triangle.AbstractSyntaxTrees.CharacterLiteral;
+import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
 import Triangle.AbstractSyntaxTrees.Command;
 import Triangle.AbstractSyntaxTrees.ConstActualParameter;
 import Triangle.AbstractSyntaxTrees.ConstDeclaration;
@@ -676,11 +677,16 @@ public class Parser {
     case Token.CLASS:
       {
         acceptIt();
-        Identifier iAST = parseIdentifier();
-        accept(Token.IS);
-        TypeDenoter tAST = parseTypeDenoter();
+	Identifier iAST = null;
+	if (currentToken.kind == Token.LBRACKET)
+	{
+	 acceptIt();
+	 iAST = parseIdentifier();
+	 accept(Token.RBRACKET);
+	}
+        Declaraton dAST = parseDeclaration();
         finish(declarationPos);
-        declarationAST = new TypeDeclaration(iAST, tAST, declarationPos);
+        declarationAST = new ClassTypeDenoter(iAST, dAST, declarationPos);
       }
       break;
 
