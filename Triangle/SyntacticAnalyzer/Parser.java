@@ -678,13 +678,14 @@ public class Parser {
       {
         acceptIt();
 	Identifier iAST = null;
-	if (currentToken.kind == Token.LBRACKET)
+	if (currentToken.kind == Token.LPAREN)
 	{
 	 acceptIt();
 	 iAST = parseIdentifier();
-	 accept(Token.RBRACKET);
+	 accept(Token.RPAREN);
 	}
-        Declaraton dAST = parseDeclaration();
+        Declaration dAST = parseDeclaration();
+	accept(Token.END);
         finish(declarationPos);
         declarationAST = new ClassTypeDenoter(iAST, dAST, declarationPos);
       }

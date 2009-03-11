@@ -4,14 +4,16 @@ import Triangle.SyntacticAnalyzer.SourcePosition;
 
 public class ClassTypeDenoter extends Declaration {
 	public ClassTypeDenoter ( Identifier iAST, Declaration dAST, 
-					Source thePosition ) {
+					SourcePosition thePosition ) {
 		super(thePosition);
 		I = iAST;
 		D = dAST;
 	}
 
+	
 	public Object visit (Visitor v, Object o) {
-		  return v.visitRecordTypeDenoter(this, o);
+//		  return v.visitRecordTypeDenoter(this, o);
+		  return null;
 	}
 	
 	public boolean equals (Object obj) {
