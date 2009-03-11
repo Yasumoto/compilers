@@ -673,6 +673,17 @@ public class Parser {
       }
       break;
 
+    case Token.CLASS:
+      {
+        acceptIt();
+        Identifier iAST = parseIdentifier();
+        accept(Token.IS);
+        TypeDenoter tAST = parseTypeDenoter();
+        finish(declarationPos);
+        declarationAST = new TypeDeclaration(iAST, tAST, declarationPos);
+      }
+      break;
+
     default:
       syntacticError("\"%\" cannot start a declaration",
         currentToken.spelling);
