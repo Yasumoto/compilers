@@ -4,4 +4,4 @@ cd cls
 
 java Triangle.Compiler2
 
-java TAM.Interpreter
+#java TAM.Interpreter

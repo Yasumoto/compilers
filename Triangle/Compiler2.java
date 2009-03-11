@@ -117,14 +117,9 @@ public class Compiler2 {
    */
   public static void main(String[] args) {
     boolean compiledOK;
-    /* Source file name as a command-line parameter:
+    // Source file name as a command-line parameter:
      if (args.length != 1) {
-     System.out.println("Usage: tc filename");
-     System.exit(1);
-     }
      
-     String sourceName = args[0];
-     */
     javax.swing.JFileChooser chooser = new javax.swing.JFileChooser();
     int returnVal = chooser.showOpenDialog(null);
     try {
@@ -137,5 +132,8 @@ public class Compiler2 {
     } catch (java.io.IOException exception) {
       System.out.println(exception.toString());
     }
+  }else{
+     String sourceName = args[0];
+  }
   }
 }
