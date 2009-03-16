@@ -2,6 +2,6 @@
 
 cd cls
 
-java Triangle.Compiler2
+java Triangle.Compiler ../tests/joe2.tri
 
 #java TAM.Interpreter

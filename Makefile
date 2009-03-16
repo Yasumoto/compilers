@@ -1,5 +1,5 @@
 CC := javac
-SOURCES := ./Triangle/Compiler2.java ./TAM/Interpreter.java
+SOURCES := ./Triangle/Compiler.java ./TAM/Interpreter.java
 CLASSDIR := cls
 CLASSPATH := .
 
