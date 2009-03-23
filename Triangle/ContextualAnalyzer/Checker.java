@@ -64,6 +64,8 @@ import Triangle.AbstractSyntaxTrees.ProcFormalParameter;
 import Triangle.AbstractSyntaxTrees.Program;
 import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
+// Joe
+import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
 import Triangle.AbstractSyntaxTrees.SimpleTypeDenoter;
@@ -622,6 +624,13 @@ public final class Checker implements Visitor {
 
   public Object visitRecordTypeDenoter(RecordTypeDenoter ast, Object o) {
     ast.FT = (FieldTypeDenoter) ast.FT.visit(this, null);
+    return ast;
+  }
+
+// Joe
+  public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) {
+    ast.I = (Identifier) ast.I.visit(this, null);
+    ast.D = (Declaration) ast.D.visit(this, null);
     return ast;
   }
 

@@ -69,6 +69,7 @@ import Triangle.AbstractSyntaxTrees.ProcFormalParameter;
 import Triangle.AbstractSyntaxTrees.Program;
 import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
+import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
 import Triangle.AbstractSyntaxTrees.SimpleTypeDenoter;
@@ -574,6 +575,21 @@ public final class Encoder implements Visitor {
     } else
       typeSize = ast.entity.size;
     return new Integer(typeSize);
+  }
+
+// Joe
+  public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) {
+    /*
+    int typeSize;
+    if (ast.entity == null) {
+      typeSize = ((Integer) ast.FT.visit(this, new Integer(0))).intValue();
+      ast.entity = new TypeRepresentation(typeSize);
+      writeTableDetails(ast);
+    } else
+      typeSize = ast.entity.size;
+    return new Integer(typeSize);
+    */
+    return null;
   }
 
 

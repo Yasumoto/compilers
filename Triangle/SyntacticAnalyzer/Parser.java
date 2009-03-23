@@ -676,14 +676,19 @@ public class Parser {
 
     case Token.CLASS:
       {
+	Identifier iAST;
         acceptIt();
-	Identifier iAST = null;
 	if (currentToken.kind == Token.LPAREN)
 	{
 	 acceptIt();
 	 iAST = parseIdentifier();
 	 accept(Token.RPAREN);
 	}
+	else
+	{
+		iAST = null;
+	}
+
         Declaration dAST = parseDeclaration();
 	accept(Token.END);
         finish(declarationPos);

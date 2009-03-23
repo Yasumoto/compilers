@@ -61,6 +61,7 @@ import Triangle.AbstractSyntaxTrees.ProcFormalParameter;
 import Triangle.AbstractSyntaxTrees.Program;
 import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
+import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
 import Triangle.AbstractSyntaxTrees.SimpleTypeDenoter;
@@ -317,6 +318,10 @@ public class LayoutVisitor implements Visitor {
     return layoutUnary("Rec.TypeD.", ast.FT);
   }
 
+  //Joe
+  public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object obj) {
+    return layoutBinary("Class.TypeD.", ast.I, ast.D);
+  }
 
   public Object visitMultipleFieldTypeDenoter(MultipleFieldTypeDenoter ast, Object obj) {
     return layoutTernary("Mult.F.TypeD.", ast.I, ast.T, ast.FT);
