@@ -4,6 +4,6 @@ make
 
 cd cls
 
-java Triangle.Compiler ../tests/joe2.tri
+java Triangle.Compiler ../tests/joe.tri
 
 #java TAM.Interpreter
