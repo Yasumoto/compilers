@@ -1,0 +1,11 @@
+! This is a comment. It continues to the end-of-line.
+let
+	class (fruit)
+		var color : Integer
+	end;
+	var y : Integer
+in
+       begin
+       y := 2 * 1 * 3;
+       putint(y)
+       end
