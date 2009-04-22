@@ -1,0 +1,17 @@
+IVTF = InstanceVariableDeclaration
+procedure on page 393 - InstanceProcedureDeclaration
+
+class ([identifier]) //this identifier could be "EmptyTypeDenoter" if it's not there!
+
+the var keyword will give you issues. you can eleminiate it by checking for everything else, and "else" it will be a variable and parse that.
+
+CLASSTypeDenoter
+---------------------------
+|
+ParentClass
+
+(ObjectTypeDenoter which is similar to emptytypedenoter. but in this case everything will inherit from "Object". 
+later on (contextual analysis) we'll have the base (or root) class, known as object. it'll be a predefined thingy, put into the symbol table.
+
+
+make sure to add class to parseDeclaration (add parseClassDeclaration + token (class) in parseDeclaration)
