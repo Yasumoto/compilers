@@ -1,11 +1,18 @@
 ! This is a comment. It continues to the end-of-line.
 let
-	class (fruit)
-		var color : Integer
-	end;
-	var y : Integer
+	type apple ~ class
+		var color : Integer;
+
+		proc set_color(set_to : Integer) ~
+			color := set_to;
+
+		proc print_color() ~
+			putint(color);
+		end;
+
+	var y : apple
 in
        begin
-       y := 2 * 1 * 3;
-       putint(y)
+       y.set_color(1)
+       y.print_color()
        end
