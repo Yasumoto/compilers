@@ -320,7 +320,7 @@ public class LayoutVisitor implements Visitor {
 
   //Joe
   public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object obj) {
-    return layoutBinary("Class.TypeD.", ast.I, ast.D);
+    return layoutUnary("Class.TypeD.", ast.D);
   }
 
   public Object visitMultipleFieldTypeDenoter(MultipleFieldTypeDenoter ast, Object obj) {

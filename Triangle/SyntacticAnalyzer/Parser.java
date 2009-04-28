@@ -934,14 +934,17 @@ public class Parser {
 // JOE
     case Token.CLASS:
       {
-	acceptIt();
-        Identifier iAST = parseIdentifier();
-        acceptIt();
+	accept(Token.CLASS);
+        //Identifier iAST = parseIdentifier();
+
+	//accept(Token.TYPE); //type
+	//accept(Token.IS); //Tilde
 
         Declaration dAST = parseDeclaration();
+	System.out.println("It parsed the declaration.");
 	accept(Token.END);
         finish(typePos);
-        typeAST = new ClassTypeDenoter(iAST, dAST, typePos);
+        typeAST = new ClassTypeDenoter(dAST, typePos);
       }
       break;
 

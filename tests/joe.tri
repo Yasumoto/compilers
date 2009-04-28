@@ -2,17 +2,14 @@
 let
 	type apple ~ class
 		var color : Integer;
+		proc setColor (setTo : Integer) ~ color := setTo;
+		proc printColor () ~ putint(color)
 
-		proc set_color(set_to : Integer) ~
-			color := set_to;
-
-		proc print_color() ~
-			putint(color);
 		end;
 
 	var y : apple
 in
        begin
-       y.set_color(1)
-       y.print_color()
+       y.setColor(1)
+       y.printColor()
        end

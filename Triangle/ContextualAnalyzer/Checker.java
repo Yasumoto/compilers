@@ -627,9 +627,8 @@ public final class Checker implements Visitor {
     return ast;
   }
 
-// Joe
+// JOE
   public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) {
-    ast.I = (Identifier) ast.I.visit(this, null);
     ast.D = (Declaration) ast.D.visit(this, null);
     return ast;
   }

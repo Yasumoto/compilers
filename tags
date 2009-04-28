@@ -1,0 +1,1196 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+AA	Triangle/AbstractSyntaxTrees/ArrayExpression.java	/^  public ArrayAggregate AA;$/;"	f	class:ArrayExpression
+AA	Triangle/AbstractSyntaxTrees/MultipleArrayAggregate.java	/^  public ArrayAggregate AA;$/;"	f	class:MultipleArrayAggregate
+AP	Triangle/AbstractSyntaxTrees/MultipleActualParameterSequence.java	/^  public ActualParameter AP;$/;"	f	class:MultipleActualParameterSequence
+AP	Triangle/AbstractSyntaxTrees/SingleActualParameterSequence.java	/^  public ActualParameter AP;$/;"	f	class:SingleActualParameterSequence
+APS	Triangle/AbstractSyntaxTrees/CallCommand.java	/^  public ActualParameterSequence APS;$/;"	f	class:CallCommand
+APS	Triangle/AbstractSyntaxTrees/CallExpression.java	/^  public ActualParameterSequence APS;$/;"	f	class:CallExpression
+APS	Triangle/AbstractSyntaxTrees/MultipleActualParameterSequence.java	/^  public ActualParameterSequence APS;$/;"	f	class:MultipleActualParameterSequence
+ARG	Triangle/AbstractSyntaxTrees/UnaryOperatorDeclaration.java	/^  public TypeDenoter ARG, RES;$/;"	f	class:UnaryOperatorDeclaration
+ARG1	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^  public TypeDenoter ARG1, ARG2, RES;$/;"	f	class:BinaryOperatorDeclaration
+ARG2	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^  public TypeDenoter ARG1, ARG2, RES;$/;"	f	class:BinaryOperatorDeclaration
+ARRAY	Triangle/SyntacticAnalyzer/Token.java	/^    ARRAY		= 4,$/;"	f	class:Token
+AST	Triangle/AbstractSyntaxTrees/AST.java	/^  public AST (SourcePosition thePosition) {$/;"	m	class:AST
+AST	Triangle/AbstractSyntaxTrees/AST.java	/^public abstract class AST {$/;"	c
+ActualParameter	Triangle/AbstractSyntaxTrees/ActualParameter.java	/^  public ActualParameter (SourcePosition thePosition) {$/;"	m	class:ActualParameter
+ActualParameter	Triangle/AbstractSyntaxTrees/ActualParameter.java	/^public abstract class ActualParameter extends AST {$/;"	c
+ActualParameterSequence	Triangle/AbstractSyntaxTrees/ActualParameterSequence.java	/^  public ActualParameterSequence (SourcePosition thePosition) {$/;"	m	class:ActualParameterSequence
+ActualParameterSequence	Triangle/AbstractSyntaxTrees/ActualParameterSequence.java	/^public abstract class ActualParameterSequence extends AST {$/;"	c
+AnyTypeDenoter	Triangle/AbstractSyntaxTrees/AnyTypeDenoter.java	/^  public AnyTypeDenoter (SourcePosition thePosition) {$/;"	m	class:AnyTypeDenoter
+AnyTypeDenoter	Triangle/AbstractSyntaxTrees/AnyTypeDenoter.java	/^public class AnyTypeDenoter extends TypeDenoter {$/;"	c
+ArrayAggregate	Triangle/AbstractSyntaxTrees/ArrayAggregate.java	/^  public ArrayAggregate (SourcePosition thePosition) {$/;"	m	class:ArrayAggregate
+ArrayAggregate	Triangle/AbstractSyntaxTrees/ArrayAggregate.java	/^public abstract class ArrayAggregate extends AST {$/;"	c
+ArrayExpression	Triangle/AbstractSyntaxTrees/ArrayExpression.java	/^  public ArrayExpression (ArrayAggregate aaAST,$/;"	m	class:ArrayExpression
+ArrayExpression	Triangle/AbstractSyntaxTrees/ArrayExpression.java	/^public class ArrayExpression extends Expression {$/;"	c
+ArrayTypeDenoter	Triangle/AbstractSyntaxTrees/ArrayTypeDenoter.java	/^  public ArrayTypeDenoter (IntegerLiteral ilAST, TypeDenoter tAST,$/;"	m	class:ArrayTypeDenoter
+ArrayTypeDenoter	Triangle/AbstractSyntaxTrees/ArrayTypeDenoter.java	/^public class ArrayTypeDenoter extends TypeDenoter {$/;"	c
+AssignCommand	Triangle/AbstractSyntaxTrees/AssignCommand.java	/^  public AssignCommand (Vname vAST, Expression eAST, SourcePosition thePosition) {$/;"	m	class:AssignCommand
+AssignCommand	Triangle/AbstractSyntaxTrees/AssignCommand.java	/^public class AssignCommand extends Command {$/;"	c
+BECOMES	Triangle/SyntacticAnalyzer/Token.java	/^    BECOMES		= 26,$/;"	f	class:Token
+BEGIN	Triangle/SyntacticAnalyzer/Token.java	/^    BEGIN		= 5,$/;"	f	class:Token
+BORDER	Triangle/TreeDrawer/LayoutVisitor.java	/^  private final int BORDER = 5;$/;"	f	class:LayoutVisitor	file:
+BinaryExpression	Triangle/AbstractSyntaxTrees/BinaryExpression.java	/^  public BinaryExpression (Expression e1AST, Operator oAST, Expression e2AST,$/;"	m	class:BinaryExpression
+BinaryExpression	Triangle/AbstractSyntaxTrees/BinaryExpression.java	/^public class BinaryExpression extends Expression {$/;"	c
+BinaryOperatorDeclaration	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^  public BinaryOperatorDeclaration (Operator oAST, TypeDenoter arg1AST,$/;"	m	class:BinaryOperatorDeclaration
+BinaryOperatorDeclaration	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^public class BinaryOperatorDeclaration extends Declaration {$/;"	c
+BoolTypeDenoter	Triangle/AbstractSyntaxTrees/BoolTypeDenoter.java	/^  public BoolTypeDenoter (SourcePosition thePosition) {$/;"	m	class:BoolTypeDenoter
+BoolTypeDenoter	Triangle/AbstractSyntaxTrees/BoolTypeDenoter.java	/^public class BoolTypeDenoter extends TypeDenoter {$/;"	c
+C	Triangle/AbstractSyntaxTrees/LetCommand.java	/^  public Command C;$/;"	f	class:LetCommand
+C	Triangle/AbstractSyntaxTrees/ProcDeclaration.java	/^  public Command C;$/;"	f	class:ProcDeclaration
+C	Triangle/AbstractSyntaxTrees/Program.java	/^  public Command C;$/;"	f	class:Program
+C	Triangle/AbstractSyntaxTrees/WhileCommand.java	/^  public Command C;$/;"	f	class:WhileCommand
+C1	Triangle/AbstractSyntaxTrees/IfCommand.java	/^  public Command C1, C2;$/;"	f	class:IfCommand
+C1	Triangle/AbstractSyntaxTrees/SequentialCommand.java	/^  public Command C1, C2;$/;"	f	class:SequentialCommand
+C2	Triangle/AbstractSyntaxTrees/IfCommand.java	/^  public Command C1, C2;$/;"	f	class:IfCommand
+C2	Triangle/AbstractSyntaxTrees/SequentialCommand.java	/^  public Command C1, C2;$/;"	f	class:SequentialCommand
+CALLIop	TAM/Machine.java	/^    CALLIop = 7,$/;"	f	class:Machine
+CALLop	TAM/Machine.java	/^    CALLop = 6,$/;"	f	class:Machine
+CB	TAM/Interpreter.java	/^    CB = 0,$/;"	f	class:Interpreter
+CB	TAM/Machine.java	/^    CB = 0,$/;"	f	class:Machine
+CBr	TAM/Machine.java	/^    CBr = 0,$/;"	f	class:Machine
+CC	Makefile	/^CC := javac$/;"	m
+CHARLITERAL	Triangle/SyntacticAnalyzer/Token.java	/^    CHARLITERAL	= 1,$/;"	f	class:Token
+CL	Triangle/AbstractSyntaxTrees/CharacterExpression.java	/^  public CharacterLiteral CL;$/;"	f	class:CharacterExpression
+CLASS	Triangle/SyntacticAnalyzer/Token.java	/^    CLASS		= 6,$/;"	f	class:Token
+CLASSDIR	Makefile	/^CLASSDIR := cls$/;"	m
+CLASSPATH	Makefile	/^CLASSPATH := .$/;"	m
+COLON	Triangle/SyntacticAnalyzer/Token.java	/^    COLON		= 23,$/;"	f	class:Token
+COMMA	Triangle/SyntacticAnalyzer/Token.java	/^    COMMA		= 25,$/;"	f	class:Token
+CONST	Triangle/SyntacticAnalyzer/Token.java	/^    CONST		= 7,$/;"	f	class:Token
+CP	TAM/Interpreter.java	/^    CT, CP, ST, HT, LB, status;$/;"	f	class:Interpreter
+CPr	TAM/Machine.java	/^    CPr = 15;$/;"	f	class:Machine
+CT	TAM/Disassembler.java	/^  static int CT;$/;"	f	class:Disassembler
+CT	TAM/Interpreter.java	/^    CT, CP, ST, HT, LB, status;$/;"	f	class:Interpreter
+CTr	TAM/Machine.java	/^    CTr = 1,$/;"	f	class:Machine
+CallCommand	Triangle/AbstractSyntaxTrees/CallCommand.java	/^  public CallCommand (Identifier iAST, ActualParameterSequence apsAST,$/;"	m	class:CallCommand
+CallCommand	Triangle/AbstractSyntaxTrees/CallCommand.java	/^public class CallCommand extends Command {$/;"	c
+CallExpression	Triangle/AbstractSyntaxTrees/CallExpression.java	/^  public CallExpression (Identifier iAST, ActualParameterSequence apsAST,$/;"	m	class:CallExpression
+CallExpression	Triangle/AbstractSyntaxTrees/CallExpression.java	/^public class CallExpression extends Expression {$/;"	c
+CharTypeDenoter	Triangle/AbstractSyntaxTrees/CharTypeDenoter.java	/^  public CharTypeDenoter (SourcePosition thePosition) {$/;"	m	class:CharTypeDenoter
+CharTypeDenoter	Triangle/AbstractSyntaxTrees/CharTypeDenoter.java	/^public class CharTypeDenoter extends TypeDenoter {$/;"	c
+CharacterExpression	Triangle/AbstractSyntaxTrees/CharacterExpression.java	/^  public CharacterExpression (CharacterLiteral clAST, SourcePosition thePosition) {$/;"	m	class:CharacterExpression
+CharacterExpression	Triangle/AbstractSyntaxTrees/CharacterExpression.java	/^public class CharacterExpression extends Expression {$/;"	c
+CharacterLiteral	Triangle/AbstractSyntaxTrees/CharacterLiteral.java	/^  public CharacterLiteral (String theSpelling, SourcePosition thePosition) {$/;"	m	class:CharacterLiteral
+CharacterLiteral	Triangle/AbstractSyntaxTrees/CharacterLiteral.java	/^public class CharacterLiteral extends Terminal {$/;"	c
+Checker	Triangle/ContextualAnalyzer/Checker.java	/^  public Checker (ErrorReporter reporter) {$/;"	m	class:Checker
+Checker	Triangle/ContextualAnalyzer/Checker.java	/^public final class Checker implements Visitor {$/;"	c
+ClassTypeDenoter	Triangle/AbstractSyntaxTrees/ClassTypeDenoter.java	/^	public ClassTypeDenoter ( Identifier iAST, Declaration dAST, $/;"	m	class:ClassTypeDenoter
+ClassTypeDenoter	Triangle/AbstractSyntaxTrees/ClassTypeDenoter.java	/^public class ClassTypeDenoter extends TypeDenoter {$/;"	c
+Command	Triangle/AbstractSyntaxTrees/Command.java	/^  public Command (SourcePosition thePosition) {$/;"	m	class:Command
+Command	Triangle/AbstractSyntaxTrees/Command.java	/^public abstract class Command extends AST {$/;"	c
+Compiler	Triangle/Compiler.java	/^public class Compiler {$/;"	c
+Compiler2	Triangle/Compiler2.java	/^public class Compiler2 {$/;"	c
+ConstActualParameter	Triangle/AbstractSyntaxTrees/ConstActualParameter.java	/^  public ConstActualParameter (Expression eAST, SourcePosition thePosition) {$/;"	m	class:ConstActualParameter
+ConstActualParameter	Triangle/AbstractSyntaxTrees/ConstActualParameter.java	/^public class ConstActualParameter extends ActualParameter {$/;"	c
+ConstDeclaration	Triangle/AbstractSyntaxTrees/ConstDeclaration.java	/^  public ConstDeclaration (Identifier iAST, Expression eAST,$/;"	m	class:ConstDeclaration
+ConstDeclaration	Triangle/AbstractSyntaxTrees/ConstDeclaration.java	/^public class ConstDeclaration extends Declaration {$/;"	c
+ConstFormalParameter	Triangle/AbstractSyntaxTrees/ConstFormalParameter.java	/^  public ConstFormalParameter (Identifier iAST, TypeDenoter tAST,$/;"	m	class:ConstFormalParameter
+ConstFormalParameter	Triangle/AbstractSyntaxTrees/ConstFormalParameter.java	/^public class ConstFormalParameter extends FormalParameter {$/;"	c
+D	Triangle/AbstractSyntaxTrees/ClassTypeDenoter.java	/^	public Declaration D;$/;"	f	class:ClassTypeDenoter
+D	Triangle/AbstractSyntaxTrees/LetCommand.java	/^  public Declaration D;$/;"	f	class:LetCommand
+D	Triangle/AbstractSyntaxTrees/LetExpression.java	/^  public Declaration D;$/;"	f	class:LetExpression
+D1	Triangle/AbstractSyntaxTrees/SequentialDeclaration.java	/^  public Declaration D1, D2;$/;"	f	class:SequentialDeclaration
+D2	Triangle/AbstractSyntaxTrees/SequentialDeclaration.java	/^  public Declaration D1, D2;$/;"	f	class:SequentialDeclaration
+DO	Triangle/SyntacticAnalyzer/Token.java	/^    DO			= 8,$/;"	f	class:Token
+DOT	Triangle/SyntacticAnalyzer/Token.java	/^    DOT			= 22,$/;"	f	class:Token
+Declaration	Triangle/AbstractSyntaxTrees/Declaration.java	/^  public Declaration (SourcePosition thePosition) {$/;"	m	class:Declaration
+Declaration	Triangle/AbstractSyntaxTrees/Declaration.java	/^public abstract class Declaration extends AST {$/;"	c
+Disassembler	TAM/Disassembler.java	/^public class Disassembler {$/;"	c
+DotVname	Triangle/AbstractSyntaxTrees/DotVname.java	/^  public DotVname (Vname vAST, Identifier iAST, SourcePosition thePosition) {$/;"	m	class:DotVname
+DotVname	Triangle/AbstractSyntaxTrees/DotVname.java	/^public class DotVname extends Vname {$/;"	c
+Drawer	Triangle/TreeDrawer/Drawer.java	/^public class Drawer {$/;"	c
+DrawerFrame	Triangle/TreeDrawer/DrawerFrame.java	/^  public DrawerFrame (JPanel panel) {$/;"	m	class:DrawerFrame
+DrawerFrame	Triangle/TreeDrawer/DrawerFrame.java	/^class DrawerFrame extends JFrame {$/;"	c
+DrawerPanel	Triangle/TreeDrawer/DrawerPanel.java	/^  public DrawerPanel (Drawer drawer) {$/;"	m	class:DrawerPanel
+DrawerPanel	Triangle/TreeDrawer/DrawerPanel.java	/^class DrawerPanel extends JPanel {$/;"	c
+DrawingTree	Triangle/TreeDrawer/DrawingTree.java	/^  public DrawingTree (String caption, int width, int height) {$/;"	m	class:DrawingTree
+DrawingTree	Triangle/TreeDrawer/DrawingTree.java	/^public class DrawingTree {$/;"	c
+E	Triangle/AbstractSyntaxTrees/AssignCommand.java	/^  public Expression E;$/;"	f	class:AssignCommand
+E	Triangle/AbstractSyntaxTrees/ConstActualParameter.java	/^  public Expression E;$/;"	f	class:ConstActualParameter
+E	Triangle/AbstractSyntaxTrees/ConstDeclaration.java	/^  public Expression E;$/;"	f	class:ConstDeclaration
+E	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^  public Expression E;$/;"	f	class:FuncDeclaration
+E	Triangle/AbstractSyntaxTrees/IfCommand.java	/^  public Expression E;$/;"	f	class:IfCommand
+E	Triangle/AbstractSyntaxTrees/LetExpression.java	/^  public Expression E;$/;"	f	class:LetExpression
+E	Triangle/AbstractSyntaxTrees/MultipleArrayAggregate.java	/^  public Expression E;$/;"	f	class:MultipleArrayAggregate
+E	Triangle/AbstractSyntaxTrees/MultipleRecordAggregate.java	/^  public Expression E;$/;"	f	class:MultipleRecordAggregate
+E	Triangle/AbstractSyntaxTrees/SingleArrayAggregate.java	/^  public Expression E;$/;"	f	class:SingleArrayAggregate
+E	Triangle/AbstractSyntaxTrees/SingleRecordAggregate.java	/^  public Expression E;$/;"	f	class:SingleRecordAggregate
+E	Triangle/AbstractSyntaxTrees/SubscriptVname.java	/^  public Expression E;$/;"	f	class:SubscriptVname
+E	Triangle/AbstractSyntaxTrees/UnaryExpression.java	/^  public Expression E;$/;"	f	class:UnaryExpression
+E	Triangle/AbstractSyntaxTrees/WhileCommand.java	/^  public Expression E;$/;"	f	class:WhileCommand
+E1	Triangle/AbstractSyntaxTrees/BinaryExpression.java	/^  public Expression E1, E2;$/;"	f	class:BinaryExpression
+E1	Triangle/AbstractSyntaxTrees/IfExpression.java	/^  public Expression E1, E2, E3;$/;"	f	class:IfExpression
+E2	Triangle/AbstractSyntaxTrees/BinaryExpression.java	/^  public Expression E1, E2;$/;"	f	class:BinaryExpression
+E2	Triangle/AbstractSyntaxTrees/IfExpression.java	/^  public Expression E1, E2, E3;$/;"	f	class:IfExpression
+E3	Triangle/AbstractSyntaxTrees/IfExpression.java	/^  public Expression E1, E2, E3;$/;"	f	class:IfExpression
+ELSE	Triangle/SyntacticAnalyzer/Token.java	/^    ELSE		= 9,$/;"	f	class:Token
+END	Triangle/SyntacticAnalyzer/Token.java	/^    END			= 10,$/;"	f	class:Token
+EOL	Triangle/SyntacticAnalyzer/SourceFile.java	/^  public static final char EOL = '\\n';$/;"	f	class:SourceFile
+EOT	Triangle/SyntacticAnalyzer/SourceFile.java	/^  public static final char EOT = '\\u0000';$/;"	f	class:SourceFile
+EOT	Triangle/SyntacticAnalyzer/Token.java	/^    EOT			= 34,$/;"	f	class:Token
+ERROR	Triangle/SyntacticAnalyzer/Token.java	/^    ERROR		= 35;$/;"	f	class:Token
+EmptyActualParameterSequence	Triangle/AbstractSyntaxTrees/EmptyActualParameterSequence.java	/^  public EmptyActualParameterSequence (SourcePosition thePosition) {$/;"	m	class:EmptyActualParameterSequence
+EmptyActualParameterSequence	Triangle/AbstractSyntaxTrees/EmptyActualParameterSequence.java	/^public class EmptyActualParameterSequence extends ActualParameterSequence {$/;"	c
+EmptyCommand	Triangle/AbstractSyntaxTrees/EmptyCommand.java	/^  public EmptyCommand (SourcePosition thePosition) {$/;"	m	class:EmptyCommand
+EmptyCommand	Triangle/AbstractSyntaxTrees/EmptyCommand.java	/^public class EmptyCommand extends Command {$/;"	c
+EmptyExpression	Triangle/AbstractSyntaxTrees/EmptyExpression.java	/^  public EmptyExpression (SourcePosition thePosition) {$/;"	m	class:EmptyExpression
+EmptyExpression	Triangle/AbstractSyntaxTrees/EmptyExpression.java	/^public class EmptyExpression extends Expression {$/;"	c
+EmptyFormalParameterSequence	Triangle/AbstractSyntaxTrees/EmptyFormalParameterSequence.java	/^  public EmptyFormalParameterSequence (SourcePosition thePosition) {$/;"	m	class:EmptyFormalParameterSequence
+EmptyFormalParameterSequence	Triangle/AbstractSyntaxTrees/EmptyFormalParameterSequence.java	/^public class EmptyFormalParameterSequence extends FormalParameterSequence {$/;"	c
+Encoder	Triangle/CodeGenerator/Encoder.java	/^  public Encoder (ErrorReporter reporter) {$/;"	m	class:Encoder
+Encoder	Triangle/CodeGenerator/Encoder.java	/^public final class Encoder implements Visitor {$/;"	c
+EqualityRoutine	Triangle/CodeGenerator/EqualityRoutine.java	/^  public EqualityRoutine () {$/;"	m	class:EqualityRoutine
+EqualityRoutine	Triangle/CodeGenerator/EqualityRoutine.java	/^  public EqualityRoutine (int size, int displacement) {$/;"	m	class:EqualityRoutine
+EqualityRoutine	Triangle/CodeGenerator/EqualityRoutine.java	/^public class EqualityRoutine extends RuntimeEntity {$/;"	c
+ErrorReporter	Triangle/ErrorReporter.java	/^  ErrorReporter() {$/;"	m	class:ErrorReporter
+ErrorReporter	Triangle/ErrorReporter.java	/^public class ErrorReporter {$/;"	c
+ErrorTypeDenoter	Triangle/AbstractSyntaxTrees/ErrorTypeDenoter.java	/^  public ErrorTypeDenoter (SourcePosition thePosition) {$/;"	m	class:ErrorTypeDenoter
+ErrorTypeDenoter	Triangle/AbstractSyntaxTrees/ErrorTypeDenoter.java	/^public class ErrorTypeDenoter extends TypeDenoter {$/;"	c
+Expression	Triangle/AbstractSyntaxTrees/Expression.java	/^  public Expression (SourcePosition thePosition) {$/;"	m	class:Expression
+Expression	Triangle/AbstractSyntaxTrees/Expression.java	/^public abstract class Expression extends AST {$/;"	c
+FIXED_FONT_ASCENT	Triangle/TreeDrawer/DrawingTree.java	/^  private final int FIXED_FONT_ASCENT = 3;$/;"	f	class:DrawingTree	file:
+FIXED_FONT_HEIGHT	Triangle/TreeDrawer/DrawingTree.java	/^  private final int FIXED_FONT_HEIGHT = 10;$/;"	f	class:DrawingTree	file:
+FP	Triangle/AbstractSyntaxTrees/MultipleFormalParameterSequence.java	/^  public FormalParameter FP;$/;"	f	class:MultipleFormalParameterSequence
+FP	Triangle/AbstractSyntaxTrees/SingleFormalParameterSequence.java	/^  public FormalParameter FP;$/;"	f	class:SingleFormalParameterSequence
+FPS	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^  public FormalParameterSequence FPS;$/;"	f	class:FuncDeclaration
+FPS	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^  public FormalParameterSequence FPS;$/;"	f	class:FuncFormalParameter
+FPS	Triangle/AbstractSyntaxTrees/MultipleFormalParameterSequence.java	/^  public FormalParameterSequence FPS;$/;"	f	class:MultipleFormalParameterSequence
+FPS	Triangle/AbstractSyntaxTrees/ProcDeclaration.java	/^  public FormalParameterSequence FPS;$/;"	f	class:ProcDeclaration
+FPS	Triangle/AbstractSyntaxTrees/ProcFormalParameter.java	/^  public FormalParameterSequence FPS;$/;"	f	class:ProcFormalParameter
+FT	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^  public FieldTypeDenoter FT;$/;"	f	class:MultipleFieldTypeDenoter
+FT	Triangle/AbstractSyntaxTrees/RecordTypeDenoter.java	/^  public FieldTypeDenoter FT;$/;"	f	class:RecordTypeDenoter
+FUNC	Triangle/SyntacticAnalyzer/Token.java	/^    FUNC		= 11,$/;"	f	class:Token
+Field	Triangle/CodeGenerator/Field.java	/^  public Field () {$/;"	m	class:Field
+Field	Triangle/CodeGenerator/Field.java	/^  public Field (int size, int fieldOffset) {$/;"	m	class:Field
+Field	Triangle/CodeGenerator/Field.java	/^public class Field extends RuntimeEntity {$/;"	c
+FieldTypeDenoter	Triangle/AbstractSyntaxTrees/FieldTypeDenoter.java	/^  public FieldTypeDenoter(SourcePosition thePosition) {$/;"	m	class:FieldTypeDenoter
+FieldTypeDenoter	Triangle/AbstractSyntaxTrees/FieldTypeDenoter.java	/^public abstract class FieldTypeDenoter extends TypeDenoter {$/;"	c
+FormalParameter	Triangle/AbstractSyntaxTrees/FormalParameter.java	/^  public FormalParameter (SourcePosition thePosition) {$/;"	m	class:FormalParameter
+FormalParameter	Triangle/AbstractSyntaxTrees/FormalParameter.java	/^public abstract class FormalParameter extends Declaration {$/;"	c
+FormalParameterSequence	Triangle/AbstractSyntaxTrees/FormalParameterSequence.java	/^  public FormalParameterSequence (SourcePosition thePosition) {$/;"	m	class:FormalParameterSequence
+FormalParameterSequence	Triangle/AbstractSyntaxTrees/FormalParameterSequence.java	/^public abstract class FormalParameterSequence extends AST {$/;"	c
+Frame	Triangle/CodeGenerator/Frame.java	/^  public Frame() {$/;"	m	class:Frame
+Frame	Triangle/CodeGenerator/Frame.java	/^  public Frame(Frame frame, Integer sizeIncrement) {$/;"	m	class:Frame
+Frame	Triangle/CodeGenerator/Frame.java	/^  public Frame(Frame frame, int sizeIncrement) {$/;"	m	class:Frame
+Frame	Triangle/CodeGenerator/Frame.java	/^  public Frame(int level, Integer size) {$/;"	m	class:Frame
+Frame	Triangle/CodeGenerator/Frame.java	/^  public Frame(int level, int size) {$/;"	m	class:Frame
+Frame	Triangle/CodeGenerator/Frame.java	/^public class Frame {$/;"	c
+FuncActualParameter	Triangle/AbstractSyntaxTrees/FuncActualParameter.java	/^  public FuncActualParameter (Identifier iAST, SourcePosition thePosition) {$/;"	m	class:FuncActualParameter
+FuncActualParameter	Triangle/AbstractSyntaxTrees/FuncActualParameter.java	/^public class FuncActualParameter extends ActualParameter {$/;"	c
+FuncDeclaration	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^  public FuncDeclaration (Identifier iAST, FormalParameterSequence fpsAST,$/;"	m	class:FuncDeclaration
+FuncDeclaration	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^public class FuncDeclaration extends Declaration {$/;"	c
+FuncFormalParameter	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^  public FuncFormalParameter (Identifier iAST, FormalParameterSequence fpsAST,$/;"	m	class:FuncFormalParameter
+FuncFormalParameter	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^public class FuncFormalParameter extends FormalParameter {$/;"	c
+HALTop	TAM/Machine.java	/^    HALTop = 15;$/;"	f	class:Machine
+HB	TAM/Interpreter.java	/^    HB = 1024;  \/\/ = upper bound of data array + 1$/;"	f	class:Interpreter
+HBr	TAM/Machine.java	/^    HBr = 6,$/;"	f	class:Machine
+HT	TAM/Interpreter.java	/^    CT, CP, ST, HT, LB, status;$/;"	f	class:Interpreter
+HTr	TAM/Machine.java	/^    HTr = 7,$/;"	f	class:Machine
+I	Triangle/AbstractSyntaxTrees/CallCommand.java	/^  public Identifier I;$/;"	f	class:CallCommand
+I	Triangle/AbstractSyntaxTrees/CallExpression.java	/^  public Identifier I;$/;"	f	class:CallExpression
+I	Triangle/AbstractSyntaxTrees/ClassTypeDenoter.java	/^	public Identifier I;$/;"	f	class:ClassTypeDenoter
+I	Triangle/AbstractSyntaxTrees/ConstDeclaration.java	/^  public Identifier I;$/;"	f	class:ConstDeclaration
+I	Triangle/AbstractSyntaxTrees/ConstFormalParameter.java	/^  public Identifier I;$/;"	f	class:ConstFormalParameter
+I	Triangle/AbstractSyntaxTrees/DotVname.java	/^  public Identifier I;$/;"	f	class:DotVname
+I	Triangle/AbstractSyntaxTrees/FuncActualParameter.java	/^  public Identifier I;$/;"	f	class:FuncActualParameter
+I	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^  public Identifier I;$/;"	f	class:FuncDeclaration
+I	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^  public Identifier I;$/;"	f	class:FuncFormalParameter
+I	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^  public Identifier I;$/;"	f	class:MultipleFieldTypeDenoter
+I	Triangle/AbstractSyntaxTrees/MultipleRecordAggregate.java	/^  public Identifier I;$/;"	f	class:MultipleRecordAggregate
+I	Triangle/AbstractSyntaxTrees/ProcActualParameter.java	/^  public Identifier I;$/;"	f	class:ProcActualParameter
+I	Triangle/AbstractSyntaxTrees/ProcDeclaration.java	/^  public Identifier I;$/;"	f	class:ProcDeclaration
+I	Triangle/AbstractSyntaxTrees/ProcFormalParameter.java	/^  public Identifier I;$/;"	f	class:ProcFormalParameter
+I	Triangle/AbstractSyntaxTrees/SimpleTypeDenoter.java	/^  public Identifier I;$/;"	f	class:SimpleTypeDenoter
+I	Triangle/AbstractSyntaxTrees/SimpleVname.java	/^  public Identifier I;$/;"	f	class:SimpleVname
+I	Triangle/AbstractSyntaxTrees/SingleFieldTypeDenoter.java	/^  public Identifier I;$/;"	f	class:SingleFieldTypeDenoter
+I	Triangle/AbstractSyntaxTrees/SingleRecordAggregate.java	/^  public Identifier I;$/;"	f	class:SingleRecordAggregate
+I	Triangle/AbstractSyntaxTrees/TypeDeclaration.java	/^  public Identifier I;$/;"	f	class:TypeDeclaration
+I	Triangle/AbstractSyntaxTrees/VarDeclaration.java	/^  public Identifier I;$/;"	f	class:VarDeclaration
+I	Triangle/AbstractSyntaxTrees/VarFormalParameter.java	/^  public Identifier I;$/;"	f	class:VarFormalParameter
+IDENTIFIER	Triangle/SyntacticAnalyzer/Token.java	/^    IDENTIFIER	= 2,$/;"	f	class:Token
+IF	Triangle/SyntacticAnalyzer/Token.java	/^    IF			= 12,$/;"	f	class:Token
+IL	Triangle/AbstractSyntaxTrees/ArrayTypeDenoter.java	/^  public IntegerLiteral IL;$/;"	f	class:ArrayTypeDenoter
+IL	Triangle/AbstractSyntaxTrees/IntegerExpression.java	/^  public IntegerLiteral IL;$/;"	f	class:IntegerExpression
+IN	Triangle/SyntacticAnalyzer/Token.java	/^    IN			= 13,$/;"	f	class:Token
+INTLITERAL	Triangle/SyntacticAnalyzer/Token.java	/^    INTLITERAL	= 0,$/;"	f	class:Token
+IS	Triangle/SyntacticAnalyzer/Token.java	/^    IS			= 27,$/;"	f	class:Token
+IdEntry	Triangle/ContextualAnalyzer/IdEntry.java	/^  IdEntry (String id, Declaration attr, int level, IdEntry previous) {$/;"	m	class:IdEntry
+IdEntry	Triangle/ContextualAnalyzer/IdEntry.java	/^public class IdEntry {$/;"	c
+IdentificationTable	Triangle/ContextualAnalyzer/IdentificationTable.java	/^  public IdentificationTable () {$/;"	m	class:IdentificationTable
+IdentificationTable	Triangle/ContextualAnalyzer/IdentificationTable.java	/^public final class IdentificationTable {$/;"	c
+Identifier	Triangle/AbstractSyntaxTrees/Identifier.java	/^  public Identifier (String theSpelling, SourcePosition thePosition) {$/;"	m	class:Identifier
+Identifier	Triangle/AbstractSyntaxTrees/Identifier.java	/^public class Identifier extends Terminal {$/;"	c
+IfCommand	Triangle/AbstractSyntaxTrees/IfCommand.java	/^  public IfCommand (Expression eAST, Command c1AST, Command c2AST,$/;"	m	class:IfCommand
+IfCommand	Triangle/AbstractSyntaxTrees/IfCommand.java	/^public class IfCommand extends Command {$/;"	c
+IfExpression	Triangle/AbstractSyntaxTrees/IfExpression.java	/^  public IfExpression (Expression e1AST, Expression e2AST, Expression e3AST,$/;"	m	class:IfExpression
+IfExpression	Triangle/AbstractSyntaxTrees/IfExpression.java	/^public class IfExpression extends Expression {$/;"	c
+Instruction	TAM/Instruction.java	/^  public Instruction() {$/;"	m	class:Instruction
+Instruction	TAM/Instruction.java	/^public class Instruction {$/;"	c
+IntTypeDenoter	Triangle/AbstractSyntaxTrees/IntTypeDenoter.java	/^  public IntTypeDenoter (SourcePosition thePosition) {$/;"	m	class:IntTypeDenoter
+IntTypeDenoter	Triangle/AbstractSyntaxTrees/IntTypeDenoter.java	/^public class IntTypeDenoter extends TypeDenoter {$/;"	c
+IntegerExpression	Triangle/AbstractSyntaxTrees/IntegerExpression.java	/^  public IntegerExpression (IntegerLiteral ilAST, SourcePosition thePosition) {$/;"	m	class:IntegerExpression
+IntegerExpression	Triangle/AbstractSyntaxTrees/IntegerExpression.java	/^public class IntegerExpression extends Expression {$/;"	c
+IntegerLiteral	Triangle/AbstractSyntaxTrees/IntegerLiteral.java	/^  public IntegerLiteral (String theSpelling, SourcePosition thePosition) {$/;"	m	class:IntegerLiteral
+IntegerLiteral	Triangle/AbstractSyntaxTrees/IntegerLiteral.java	/^public class IntegerLiteral extends Terminal {$/;"	c
+Interpreter	TAM/Interpreter.java	/^public class Interpreter {$/;"	c
+JUMPIFop	TAM/Machine.java	/^    JUMPIFop = 14,$/;"	f	class:Machine
+JUMPIop	TAM/Machine.java	/^    JUMPIop = 13,$/;"	f	class:Machine
+JUMPop	TAM/Machine.java	/^    JUMPop = 12,$/;"	f	class:Machine
+KnownAddress	Triangle/CodeGenerator/KnownAddress.java	/^  public KnownAddress () {$/;"	m	class:KnownAddress
+KnownAddress	Triangle/CodeGenerator/KnownAddress.java	/^  public KnownAddress (int size, int level, int displacement) {$/;"	m	class:KnownAddress
+KnownAddress	Triangle/CodeGenerator/KnownAddress.java	/^public class KnownAddress extends RuntimeEntity {$/;"	c
+KnownRoutine	Triangle/CodeGenerator/KnownRoutine.java	/^  public KnownRoutine () {$/;"	m	class:KnownRoutine
+KnownRoutine	Triangle/CodeGenerator/KnownRoutine.java	/^  public KnownRoutine (int size, int level, int displacement) {$/;"	m	class:KnownRoutine
+KnownRoutine	Triangle/CodeGenerator/KnownRoutine.java	/^public class KnownRoutine extends RuntimeEntity {$/;"	c
+KnownValue	Triangle/CodeGenerator/KnownValue.java	/^  public KnownValue () {$/;"	m	class:KnownValue
+KnownValue	Triangle/CodeGenerator/KnownValue.java	/^  public KnownValue (int size, int value) {$/;"	m	class:KnownValue
+KnownValue	Triangle/CodeGenerator/KnownValue.java	/^public class KnownValue extends RuntimeEntity {$/;"	c
+L1r	TAM/Machine.java	/^    L1r = LBr + 1,$/;"	f	class:Machine
+L2r	TAM/Machine.java	/^    L2r = LBr + 2,$/;"	f	class:Machine
+L3r	TAM/Machine.java	/^    L3r = LBr + 3,$/;"	f	class:Machine
+L4r	TAM/Machine.java	/^    L4r = LBr + 4,$/;"	f	class:Machine
+L5r	TAM/Machine.java	/^    L5r = LBr + 5,$/;"	f	class:Machine
+L6r	TAM/Machine.java	/^    L6r = LBr + 6,$/;"	f	class:Machine
+LB	TAM/Interpreter.java	/^    CT, CP, ST, HT, LB, status;$/;"	f	class:Interpreter
+LBRACKET	Triangle/SyntacticAnalyzer/Token.java	/^    LBRACKET		= 30,$/;"	f	class:Token
+LBr	TAM/Machine.java	/^    LBr = 8,$/;"	f	class:Machine
+LCURLY	Triangle/SyntacticAnalyzer/Token.java	/^    LCURLY		= 32,$/;"	f	class:Token
+LET	Triangle/SyntacticAnalyzer/Token.java	/^    LET			= 14,$/;"	f	class:Token
+LOADAop	TAM/Machine.java	/^    LOADAop = 1,$/;"	f	class:Machine
+LOADIop	TAM/Machine.java	/^    LOADIop = 2,$/;"	f	class:Machine
+LOADLop	TAM/Machine.java	/^    LOADLop = 3,$/;"	f	class:Machine
+LOADop	TAM/Machine.java	/^    LOADop = 0,$/;"	f	class:Machine
+LPAREN	Triangle/SyntacticAnalyzer/Token.java	/^    LPAREN		= 28,$/;"	f	class:Token
+LayoutVisitor	Triangle/TreeDrawer/LayoutVisitor.java	/^  public LayoutVisitor (FontMetrics fontMetrics) {$/;"	m	class:LayoutVisitor
+LayoutVisitor	Triangle/TreeDrawer/LayoutVisitor.java	/^public class LayoutVisitor implements Visitor {$/;"	c
+LetCommand	Triangle/AbstractSyntaxTrees/LetCommand.java	/^  public LetCommand (Declaration dAST, Command cAST, SourcePosition thePosition) {$/;"	m	class:LetCommand
+LetCommand	Triangle/AbstractSyntaxTrees/LetCommand.java	/^public class LetCommand extends Command {$/;"	c
+LetExpression	Triangle/AbstractSyntaxTrees/LetExpression.java	/^  public LetExpression (Declaration dAST, Expression eAST, SourcePosition thePosition) {$/;"	m	class:LetExpression
+LetExpression	Triangle/AbstractSyntaxTrees/LetExpression.java	/^public class LetExpression extends Expression {$/;"	c
+Machine	TAM/Machine.java	/^public final class Machine {$/;"	c
+MultipleActualParameterSequence	Triangle/AbstractSyntaxTrees/MultipleActualParameterSequence.java	/^  public MultipleActualParameterSequence (ActualParameter apAST, ActualParameterSequence apsAST,$/;"	m	class:MultipleActualParameterSequence
+MultipleActualParameterSequence	Triangle/AbstractSyntaxTrees/MultipleActualParameterSequence.java	/^public class MultipleActualParameterSequence extends ActualParameterSequence {$/;"	c
+MultipleArrayAggregate	Triangle/AbstractSyntaxTrees/MultipleArrayAggregate.java	/^  public MultipleArrayAggregate (Expression eAST, ArrayAggregate aaAST,$/;"	m	class:MultipleArrayAggregate
+MultipleArrayAggregate	Triangle/AbstractSyntaxTrees/MultipleArrayAggregate.java	/^public class MultipleArrayAggregate extends ArrayAggregate {$/;"	c
+MultipleFieldTypeDenoter	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^  public MultipleFieldTypeDenoter (Identifier iAST, TypeDenoter tAST, FieldTypeDenoter ftAST,$/;"	m	class:MultipleFieldTypeDenoter
+MultipleFieldTypeDenoter	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^public class MultipleFieldTypeDenoter extends FieldTypeDenoter {$/;"	c
+MultipleFormalParameterSequence	Triangle/AbstractSyntaxTrees/MultipleFormalParameterSequence.java	/^  public MultipleFormalParameterSequence (FormalParameter fpAST, FormalParameterSequence fpsAST,$/;"	m	class:MultipleFormalParameterSequence
+MultipleFormalParameterSequence	Triangle/AbstractSyntaxTrees/MultipleFormalParameterSequence.java	/^public class MultipleFormalParameterSequence extends FormalParameterSequence {$/;"	c
+MultipleRecordAggregate	Triangle/AbstractSyntaxTrees/MultipleRecordAggregate.java	/^  public MultipleRecordAggregate (Identifier iAST, Expression eAST, RecordAggregate raAST,$/;"	m	class:MultipleRecordAggregate
+MultipleRecordAggregate	Triangle/AbstractSyntaxTrees/MultipleRecordAggregate.java	/^public class MultipleRecordAggregate extends RecordAggregate {$/;"	c
+O	Triangle/AbstractSyntaxTrees/BinaryExpression.java	/^  public Operator O;$/;"	f	class:BinaryExpression
+O	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^  public Operator O;$/;"	f	class:BinaryOperatorDeclaration
+O	Triangle/AbstractSyntaxTrees/UnaryExpression.java	/^  public Operator O;$/;"	f	class:UnaryExpression
+O	Triangle/AbstractSyntaxTrees/UnaryOperatorDeclaration.java	/^  public Operator O;$/;"	f	class:UnaryOperatorDeclaration
+OF	Triangle/SyntacticAnalyzer/Token.java	/^    OF			= 15,$/;"	f	class:Token
+OPERATOR	Triangle/SyntacticAnalyzer/Token.java	/^    OPERATOR	= 3,$/;"	f	class:Token
+ObjectAddress	Triangle/CodeGenerator/ObjectAddress.java	/^  public ObjectAddress (int level, int displacement) {$/;"	m	class:ObjectAddress
+ObjectAddress	Triangle/CodeGenerator/ObjectAddress.java	/^public final class ObjectAddress {$/;"	c
+Operator	Triangle/AbstractSyntaxTrees/Operator.java	/^  public Operator (String theSpelling, SourcePosition thePosition) {$/;"	m	class:Operator
+Operator	Triangle/AbstractSyntaxTrees/Operator.java	/^public class Operator extends Terminal {$/;"	c
+PARENT_SEP	Triangle/TreeDrawer/LayoutVisitor.java	/^  private final int PARENT_SEP = 30;$/;"	f	class:LayoutVisitor	file:
+PB	TAM/Machine.java	/^    PB = 1024,  \/\/ = upper bound of code array + 1$/;"	f	class:Machine
+PBr	TAM/Machine.java	/^    PBr = 2,$/;"	f	class:Machine
+POPop	TAM/Machine.java	/^    POPop = 11,$/;"	f	class:Machine
+PROC	Triangle/SyntacticAnalyzer/Token.java	/^    PROC		= 16,$/;"	f	class:Token
+PT	TAM/Machine.java	/^    PT = 1052;  \/\/ = PB + 28$/;"	f	class:Machine
+PTr	TAM/Machine.java	/^    PTr = 3,$/;"	f	class:Machine
+PUSHop	TAM/Machine.java	/^    PUSHop = 10,$/;"	f	class:Machine
+Parser	Triangle/SyntacticAnalyzer/Parser.java	/^  public Parser(Scanner lexer, ErrorReporter reporter) {$/;"	m	class:Parser
+Parser	Triangle/SyntacticAnalyzer/Parser.java	/^public class Parser {$/;"	c
+Polygon	Triangle/TreeDrawer/Polygon.java	/^class Polygon {$/;"	c
+Polyline	Triangle/TreeDrawer/Polyline.java	/^    Polyline(int dx, int dy, Polyline link) {$/;"	m	class:Polyline
+Polyline	Triangle/TreeDrawer/Polyline.java	/^class Polyline {$/;"	c
+PrimitiveRoutine	Triangle/CodeGenerator/PrimitiveRoutine.java	/^  public PrimitiveRoutine () {$/;"	m	class:PrimitiveRoutine
+PrimitiveRoutine	Triangle/CodeGenerator/PrimitiveRoutine.java	/^  public PrimitiveRoutine (int size, int displacement) {$/;"	m	class:PrimitiveRoutine
+PrimitiveRoutine	Triangle/CodeGenerator/PrimitiveRoutine.java	/^public class PrimitiveRoutine extends RuntimeEntity {$/;"	c
+ProcActualParameter	Triangle/AbstractSyntaxTrees/ProcActualParameter.java	/^  public ProcActualParameter (Identifier iAST, SourcePosition thePosition) {$/;"	m	class:ProcActualParameter
+ProcActualParameter	Triangle/AbstractSyntaxTrees/ProcActualParameter.java	/^public class ProcActualParameter extends ActualParameter {$/;"	c
+ProcDeclaration	Triangle/AbstractSyntaxTrees/ProcDeclaration.java	/^  public ProcDeclaration (Identifier iAST, FormalParameterSequence fpsAST,$/;"	m	class:ProcDeclaration
+ProcDeclaration	Triangle/AbstractSyntaxTrees/ProcDeclaration.java	/^public class ProcDeclaration extends Declaration {$/;"	c
+ProcFormalParameter	Triangle/AbstractSyntaxTrees/ProcFormalParameter.java	/^  public ProcFormalParameter (Identifier iAST, FormalParameterSequence fpsAST,$/;"	m	class:ProcFormalParameter
+ProcFormalParameter	Triangle/AbstractSyntaxTrees/ProcFormalParameter.java	/^public class ProcFormalParameter extends FormalParameter {$/;"	c
+Program	Triangle/AbstractSyntaxTrees/Program.java	/^  public Program (Command cAST, SourcePosition thePosition) {$/;"	m	class:Program
+Program	Triangle/AbstractSyntaxTrees/Program.java	/^public class Program extends AST {$/;"	c
+RA	Triangle/AbstractSyntaxTrees/MultipleRecordAggregate.java	/^  public RecordAggregate RA;$/;"	f	class:MultipleRecordAggregate
+RA	Triangle/AbstractSyntaxTrees/RecordExpression.java	/^  public RecordAggregate RA;$/;"	f	class:RecordExpression
+RBRACKET	Triangle/SyntacticAnalyzer/Token.java	/^    RBRACKET		= 31,$/;"	f	class:Token
+RCURLY	Triangle/SyntacticAnalyzer/Token.java	/^    RCURLY		= 33,$/;"	f	class:Token
+RECORD	Triangle/SyntacticAnalyzer/Token.java	/^    RECORD		= 17,$/;"	f	class:Token
+RES	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^  public TypeDenoter ARG1, ARG2, RES;$/;"	f	class:BinaryOperatorDeclaration
+RES	Triangle/AbstractSyntaxTrees/UnaryOperatorDeclaration.java	/^  public TypeDenoter ARG, RES;$/;"	f	class:UnaryOperatorDeclaration
+RETURNop	TAM/Machine.java	/^    RETURNop = 8,$/;"	f	class:Machine
+RPAREN	Triangle/SyntacticAnalyzer/Token.java	/^    RPAREN		= 29,$/;"	f	class:Token
+RecordAggregate	Triangle/AbstractSyntaxTrees/RecordAggregate.java	/^  public RecordAggregate (SourcePosition thePosition) {$/;"	m	class:RecordAggregate
+RecordAggregate	Triangle/AbstractSyntaxTrees/RecordAggregate.java	/^public abstract class RecordAggregate extends AST {$/;"	c
+RecordExpression	Triangle/AbstractSyntaxTrees/RecordExpression.java	/^  public RecordExpression (RecordAggregate raAST, SourcePosition thePosition) {$/;"	m	class:RecordExpression
+RecordExpression	Triangle/AbstractSyntaxTrees/RecordExpression.java	/^public class RecordExpression extends Expression {$/;"	c
+RecordTypeDenoter	Triangle/AbstractSyntaxTrees/RecordTypeDenoter.java	/^  public RecordTypeDenoter (FieldTypeDenoter ftAST, SourcePosition thePosition) {$/;"	m	class:RecordTypeDenoter
+RecordTypeDenoter	Triangle/AbstractSyntaxTrees/RecordTypeDenoter.java	/^public class RecordTypeDenoter extends TypeDenoter {$/;"	c
+RuntimeEntity	Triangle/CodeGenerator/RuntimeEntity.java	/^  public RuntimeEntity () {$/;"	m	class:RuntimeEntity
+RuntimeEntity	Triangle/CodeGenerator/RuntimeEntity.java	/^  public RuntimeEntity (int size) {$/;"	m	class:RuntimeEntity
+RuntimeEntity	Triangle/CodeGenerator/RuntimeEntity.java	/^public abstract class RuntimeEntity {$/;"	c
+SB	TAM/Interpreter.java	/^    SB = 0,$/;"	f	class:Interpreter
+SBr	TAM/Machine.java	/^    SBr = 4,$/;"	f	class:Machine
+SEMICOLON	Triangle/SyntacticAnalyzer/Token.java	/^    SEMICOLON		= 24,       $/;"	f	class:Token
+SOURCES	Makefile	/^SOURCES := .\/Triangle\/Compiler.java .\/TAM\/Interpreter.java$/;"	m
+ST	TAM/Interpreter.java	/^    CT, CP, ST, HT, LB, status;$/;"	f	class:Interpreter
+STOREIop	TAM/Machine.java	/^    STOREIop = 5,$/;"	f	class:Machine
+STOREop	TAM/Machine.java	/^    STOREop = 4,$/;"	f	class:Machine
+STr	TAM/Machine.java	/^    STr = 5,$/;"	f	class:Machine
+Scanner	Triangle/SyntacticAnalyzer/Scanner.java	/^  public Scanner(SourceFile source) {$/;"	m	class:Scanner
+Scanner	Triangle/SyntacticAnalyzer/Scanner.java	/^public final class Scanner {$/;"	c
+SequentialCommand	Triangle/AbstractSyntaxTrees/SequentialCommand.java	/^  public SequentialCommand (Command c1AST, Command c2AST, SourcePosition thePosition) {$/;"	m	class:SequentialCommand
+SequentialCommand	Triangle/AbstractSyntaxTrees/SequentialCommand.java	/^public class SequentialCommand extends Command {$/;"	c
+SequentialDeclaration	Triangle/AbstractSyntaxTrees/SequentialDeclaration.java	/^  public SequentialDeclaration (Declaration d1AST, Declaration d2AST,$/;"	m	class:SequentialDeclaration
+SequentialDeclaration	Triangle/AbstractSyntaxTrees/SequentialDeclaration.java	/^public class SequentialDeclaration extends Declaration {$/;"	c
+SimpleTypeDenoter	Triangle/AbstractSyntaxTrees/SimpleTypeDenoter.java	/^  public SimpleTypeDenoter (Identifier iAST, SourcePosition thePosition) {$/;"	m	class:SimpleTypeDenoter
+SimpleTypeDenoter	Triangle/AbstractSyntaxTrees/SimpleTypeDenoter.java	/^public class SimpleTypeDenoter extends TypeDenoter {$/;"	c
+SimpleVname	Triangle/AbstractSyntaxTrees/SimpleVname.java	/^  public SimpleVname (Identifier iAST, SourcePosition thePosition) {$/;"	m	class:SimpleVname
+SimpleVname	Triangle/AbstractSyntaxTrees/SimpleVname.java	/^public class SimpleVname extends Vname {$/;"	c
+SingleActualParameterSequence	Triangle/AbstractSyntaxTrees/SingleActualParameterSequence.java	/^  public SingleActualParameterSequence (ActualParameter apAST,$/;"	m	class:SingleActualParameterSequence
+SingleActualParameterSequence	Triangle/AbstractSyntaxTrees/SingleActualParameterSequence.java	/^public class SingleActualParameterSequence extends ActualParameterSequence {$/;"	c
+SingleArrayAggregate	Triangle/AbstractSyntaxTrees/SingleArrayAggregate.java	/^  public SingleArrayAggregate (Expression eAST,$/;"	m	class:SingleArrayAggregate
+SingleArrayAggregate	Triangle/AbstractSyntaxTrees/SingleArrayAggregate.java	/^public class SingleArrayAggregate extends ArrayAggregate {$/;"	c
+SingleFieldTypeDenoter	Triangle/AbstractSyntaxTrees/SingleFieldTypeDenoter.java	/^  public SingleFieldTypeDenoter (Identifier iAST, TypeDenoter tAST,$/;"	m	class:SingleFieldTypeDenoter
+SingleFieldTypeDenoter	Triangle/AbstractSyntaxTrees/SingleFieldTypeDenoter.java	/^public class SingleFieldTypeDenoter extends FieldTypeDenoter {$/;"	c
+SingleFormalParameterSequence	Triangle/AbstractSyntaxTrees/SingleFormalParameterSequence.java	/^  public SingleFormalParameterSequence (FormalParameter fpAST,$/;"	m	class:SingleFormalParameterSequence
+SingleFormalParameterSequence	Triangle/AbstractSyntaxTrees/SingleFormalParameterSequence.java	/^public class SingleFormalParameterSequence extends FormalParameterSequence {$/;"	c
+SingleRecordAggregate	Triangle/AbstractSyntaxTrees/SingleRecordAggregate.java	/^  public SingleRecordAggregate (Identifier iAST, Expression eAST,$/;"	m	class:SingleRecordAggregate
+SingleRecordAggregate	Triangle/AbstractSyntaxTrees/SingleRecordAggregate.java	/^public class SingleRecordAggregate extends RecordAggregate {$/;"	c
+SourceFile	Triangle/SyntacticAnalyzer/SourceFile.java	/^  public SourceFile(String filename) {$/;"	m	class:SourceFile
+SourceFile	Triangle/SyntacticAnalyzer/SourceFile.java	/^public class SourceFile {$/;"	c
+SourcePosition	Triangle/SyntacticAnalyzer/SourcePosition.java	/^  public SourcePosition () {$/;"	m	class:SourcePosition
+SourcePosition	Triangle/SyntacticAnalyzer/SourcePosition.java	/^  public SourcePosition (int s, int f) {$/;"	m	class:SourcePosition
+SourcePosition	Triangle/SyntacticAnalyzer/SourcePosition.java	/^public class SourcePosition {$/;"	c
+StdEnvironment	Triangle/StdEnvironment.java	/^public final class StdEnvironment {$/;"	c
+SubscriptVname	Triangle/AbstractSyntaxTrees/SubscriptVname.java	/^  public SubscriptVname (Vname vAST, Expression eAST, SourcePosition thePosition) {$/;"	m	class:SubscriptVname
+SubscriptVname	Triangle/AbstractSyntaxTrees/SubscriptVname.java	/^public class SubscriptVname extends Vname {$/;"	c
+SyntaxError	Triangle/SyntacticAnalyzer/SyntaxError.java	/^  SyntaxError (String s) {$/;"	m	class:SyntaxError
+SyntaxError	Triangle/SyntacticAnalyzer/SyntaxError.java	/^  SyntaxError() {$/;"	m	class:SyntaxError
+SyntaxError	Triangle/SyntacticAnalyzer/SyntaxError.java	/^class SyntaxError extends Exception {$/;"	c
+T	Triangle/AbstractSyntaxTrees/ArrayTypeDenoter.java	/^  public TypeDenoter T;$/;"	f	class:ArrayTypeDenoter
+T	Triangle/AbstractSyntaxTrees/ConstFormalParameter.java	/^  public TypeDenoter T;$/;"	f	class:ConstFormalParameter
+T	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^  public TypeDenoter T;$/;"	f	class:FuncDeclaration
+T	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^  public TypeDenoter T;$/;"	f	class:FuncFormalParameter
+T	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^  public TypeDenoter T;$/;"	f	class:MultipleFieldTypeDenoter
+T	Triangle/AbstractSyntaxTrees/SingleFieldTypeDenoter.java	/^  public TypeDenoter T;$/;"	f	class:SingleFieldTypeDenoter
+T	Triangle/AbstractSyntaxTrees/TypeDeclaration.java	/^  public TypeDenoter T;$/;"	f	class:TypeDeclaration
+T	Triangle/AbstractSyntaxTrees/VarDeclaration.java	/^  public TypeDenoter T;$/;"	f	class:VarDeclaration
+T	Triangle/AbstractSyntaxTrees/VarFormalParameter.java	/^  public TypeDenoter T;$/;"	f	class:VarFormalParameter
+TAM	TAM/Disassembler.java	/^package TAM;$/;"	p
+TAM	TAM/Instruction.java	/^package TAM;$/;"	p
+TAM	TAM/Interpreter.java	/^package TAM;$/;"	p
+TAM	TAM/Machine.java	/^package TAM;$/;"	p
+THEN	Triangle/SyntacticAnalyzer/Token.java	/^    THEN		= 18,$/;"	f	class:Token
+TYPE	Triangle/SyntacticAnalyzer/Token.java	/^    TYPE		= 19,$/;"	f	class:Token
+Terminal	Triangle/AbstractSyntaxTrees/Terminal.java	/^  public Terminal (String theSpelling, SourcePosition thePosition) {$/;"	m	class:Terminal
+Terminal	Triangle/AbstractSyntaxTrees/Terminal.java	/^abstract public class Terminal extends AST {$/;"	c
+Token	Triangle/SyntacticAnalyzer/Token.java	/^  public Token(int kind, String spelling, SourcePosition position) {$/;"	m	class:Token
+Token	Triangle/SyntacticAnalyzer/Token.java	/^final class Token extends Object {$/;"	c
+Triangle	Triangle/Compiler.java	/^package Triangle;$/;"	p
+Triangle	Triangle/Compiler2.java	/^package Triangle;$/;"	p
+Triangle	Triangle/ErrorReporter.java	/^package Triangle;$/;"	p
+Triangle	Triangle/StdEnvironment.java	/^package Triangle;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/AST.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ActualParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ActualParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/AnyTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ArrayAggregate.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ArrayExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ArrayTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/AssignCommand.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/BinaryExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/BoolTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/CallCommand.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/CallExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/CharTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/CharacterExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/CharacterLiteral.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ClassTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Command.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ConstActualParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ConstDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ConstFormalParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Declaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/DotVname.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/EmptyActualParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/EmptyCommand.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/EmptyExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/EmptyFormalParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ErrorTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Expression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/FieldTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/FormalParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/FormalParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/FuncActualParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Identifier.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/IfCommand.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/IfExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/IntTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/IntegerExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/IntegerLiteral.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/LetCommand.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/LetExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/MultipleActualParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/MultipleArrayAggregate.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/MultipleFormalParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/MultipleRecordAggregate.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Operator.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ProcActualParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ProcDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/ProcFormalParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Program.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/RecordAggregate.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/RecordExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/RecordTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SequentialCommand.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SequentialDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SimpleTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SimpleVname.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SingleActualParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SingleArrayAggregate.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SingleFieldTypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SingleFormalParameterSequence.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SingleRecordAggregate.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/SubscriptVname.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Terminal.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/TypeDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/TypeDenoter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/UnaryExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/UnaryOperatorDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/VarActualParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/VarDeclaration.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/VarFormalParameter.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Visitor.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/Vname.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/VnameExpression.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.AbstractSyntaxTrees	Triangle/AbstractSyntaxTrees/WhileCommand.java	/^package Triangle.AbstractSyntaxTrees;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/Encoder.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/EqualityRoutine.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/Field.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/Frame.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/KnownAddress.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/KnownRoutine.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/KnownValue.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/ObjectAddress.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/PrimitiveRoutine.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/RuntimeEntity.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/TypeRepresentation.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/UnknownAddress.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/UnknownRoutine.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.CodeGenerator	Triangle/CodeGenerator/UnknownValue.java	/^package Triangle.CodeGenerator;$/;"	p
+Triangle.ContextualAnalyzer	Triangle/ContextualAnalyzer/Checker.java	/^package Triangle.ContextualAnalyzer;$/;"	p
+Triangle.ContextualAnalyzer	Triangle/ContextualAnalyzer/IdEntry.java	/^package Triangle.ContextualAnalyzer;$/;"	p
+Triangle.ContextualAnalyzer	Triangle/ContextualAnalyzer/IdentificationTable.java	/^package Triangle.ContextualAnalyzer;$/;"	p
+Triangle.SyntacticAnalyzer	Triangle/SyntacticAnalyzer/Parser.java	/^package Triangle.SyntacticAnalyzer;$/;"	p
+Triangle.SyntacticAnalyzer	Triangle/SyntacticAnalyzer/Scanner.java	/^package Triangle.SyntacticAnalyzer;$/;"	p
+Triangle.SyntacticAnalyzer	Triangle/SyntacticAnalyzer/SourceFile.java	/^package Triangle.SyntacticAnalyzer;$/;"	p
+Triangle.SyntacticAnalyzer	Triangle/SyntacticAnalyzer/SourcePosition.java	/^package Triangle.SyntacticAnalyzer;$/;"	p
+Triangle.SyntacticAnalyzer	Triangle/SyntacticAnalyzer/SyntaxError.java	/^package Triangle.SyntacticAnalyzer;$/;"	p
+Triangle.SyntacticAnalyzer	Triangle/SyntacticAnalyzer/Token.java	/^package Triangle.SyntacticAnalyzer;$/;"	p
+Triangle.TreeDrawer	Triangle/TreeDrawer/Drawer.java	/^package Triangle.TreeDrawer;$/;"	p
+Triangle.TreeDrawer	Triangle/TreeDrawer/DrawerFrame.java	/^package Triangle.TreeDrawer;$/;"	p
+Triangle.TreeDrawer	Triangle/TreeDrawer/DrawerPanel.java	/^package Triangle.TreeDrawer;$/;"	p
+Triangle.TreeDrawer	Triangle/TreeDrawer/DrawingTree.java	/^package Triangle.TreeDrawer;$/;"	p
+Triangle.TreeDrawer	Triangle/TreeDrawer/LayoutVisitor.java	/^package Triangle.TreeDrawer;$/;"	p
+Triangle.TreeDrawer	Triangle/TreeDrawer/Polygon.java	/^package Triangle.TreeDrawer;$/;"	p
+Triangle.TreeDrawer	Triangle/TreeDrawer/Polyline.java	/^package Triangle.TreeDrawer;$/;"	p
+TypeDeclaration	Triangle/AbstractSyntaxTrees/TypeDeclaration.java	/^  public TypeDeclaration(Identifier iAST, TypeDenoter tAST,$/;"	m	class:TypeDeclaration
+TypeDeclaration	Triangle/AbstractSyntaxTrees/TypeDeclaration.java	/^public class TypeDeclaration extends Declaration {$/;"	c
+TypeDenoter	Triangle/AbstractSyntaxTrees/TypeDenoter.java	/^  public TypeDenoter (SourcePosition thePosition) {$/;"	m	class:TypeDenoter
+TypeDenoter	Triangle/AbstractSyntaxTrees/TypeDenoter.java	/^public abstract class TypeDenoter extends AST {$/;"	c
+TypeRepresentation	Triangle/CodeGenerator/TypeRepresentation.java	/^  public TypeRepresentation (int size) {$/;"	m	class:TypeRepresentation
+TypeRepresentation	Triangle/CodeGenerator/TypeRepresentation.java	/^public class TypeRepresentation extends RuntimeEntity {$/;"	c
+UnaryExpression	Triangle/AbstractSyntaxTrees/UnaryExpression.java	/^  public UnaryExpression (Operator oAST, Expression eAST,$/;"	m	class:UnaryExpression
+UnaryExpression	Triangle/AbstractSyntaxTrees/UnaryExpression.java	/^public class UnaryExpression extends Expression {$/;"	c
+UnaryOperatorDeclaration	Triangle/AbstractSyntaxTrees/UnaryOperatorDeclaration.java	/^  public UnaryOperatorDeclaration (Operator oAST, TypeDenoter argAST,$/;"	m	class:UnaryOperatorDeclaration
+UnaryOperatorDeclaration	Triangle/AbstractSyntaxTrees/UnaryOperatorDeclaration.java	/^public class UnaryOperatorDeclaration extends Declaration {$/;"	c
+UnknownAddress	Triangle/CodeGenerator/UnknownAddress.java	/^  public UnknownAddress () {$/;"	m	class:UnknownAddress
+UnknownAddress	Triangle/CodeGenerator/UnknownAddress.java	/^  public UnknownAddress (int size, int level, int displacement) {$/;"	m	class:UnknownAddress
+UnknownAddress	Triangle/CodeGenerator/UnknownAddress.java	/^public class UnknownAddress extends RuntimeEntity {$/;"	c
+UnknownRoutine	Triangle/CodeGenerator/UnknownRoutine.java	/^  public UnknownRoutine () {$/;"	m	class:UnknownRoutine
+UnknownRoutine	Triangle/CodeGenerator/UnknownRoutine.java	/^  public UnknownRoutine (int size, int level, int displacement) {$/;"	m	class:UnknownRoutine
+UnknownRoutine	Triangle/CodeGenerator/UnknownRoutine.java	/^public class UnknownRoutine extends RuntimeEntity {$/;"	c
+UnknownValue	Triangle/CodeGenerator/UnknownValue.java	/^  public UnknownValue () {$/;"	m	class:UnknownValue
+UnknownValue	Triangle/CodeGenerator/UnknownValue.java	/^  public UnknownValue (int size, int level, int displacement) {$/;"	m	class:UnknownValue
+UnknownValue	Triangle/CodeGenerator/UnknownValue.java	/^public class UnknownValue extends RuntimeEntity {$/;"	c
+V	Triangle/AbstractSyntaxTrees/AssignCommand.java	/^  public Vname V;$/;"	f	class:AssignCommand
+V	Triangle/AbstractSyntaxTrees/DotVname.java	/^  public Vname V;$/;"	f	class:DotVname
+V	Triangle/AbstractSyntaxTrees/SubscriptVname.java	/^  public Vname V;$/;"	f	class:SubscriptVname
+V	Triangle/AbstractSyntaxTrees/VarActualParameter.java	/^  public Vname V;$/;"	f	class:VarActualParameter
+V	Triangle/AbstractSyntaxTrees/VnameExpression.java	/^  public Vname V;$/;"	f	class:VnameExpression
+VAR	Triangle/SyntacticAnalyzer/Token.java	/^    VAR			= 20,$/;"	f	class:Token
+VarActualParameter	Triangle/AbstractSyntaxTrees/VarActualParameter.java	/^  public VarActualParameter (Vname vAST, SourcePosition thePosition) {$/;"	m	class:VarActualParameter
+VarActualParameter	Triangle/AbstractSyntaxTrees/VarActualParameter.java	/^public class VarActualParameter extends ActualParameter {$/;"	c
+VarDeclaration	Triangle/AbstractSyntaxTrees/VarDeclaration.java	/^  public VarDeclaration (Identifier iAST, TypeDenoter tAST,$/;"	m	class:VarDeclaration
+VarDeclaration	Triangle/AbstractSyntaxTrees/VarDeclaration.java	/^public class VarDeclaration extends Declaration {$/;"	c
+VarFormalParameter	Triangle/AbstractSyntaxTrees/VarFormalParameter.java	/^  public VarFormalParameter (Identifier iAST, TypeDenoter tAST,$/;"	m	class:VarFormalParameter
+VarFormalParameter	Triangle/AbstractSyntaxTrees/VarFormalParameter.java	/^public class VarFormalParameter extends FormalParameter {$/;"	c
+Visitor	Triangle/AbstractSyntaxTrees/Visitor.java	/^public interface Visitor {$/;"	i
+Vname	Triangle/AbstractSyntaxTrees/Vname.java	/^  public Vname (SourcePosition thePosition) {$/;"	m	class:Vname
+Vname	Triangle/AbstractSyntaxTrees/Vname.java	/^public abstract class Vname extends AST {$/;"	c
+VnameExpression	Triangle/AbstractSyntaxTrees/VnameExpression.java	/^  public VnameExpression (Vname vAST, SourcePosition thePosition) {$/;"	m	class:VnameExpression
+VnameExpression	Triangle/AbstractSyntaxTrees/VnameExpression.java	/^public class VnameExpression extends Expression {$/;"	c
+WHILE	Triangle/SyntacticAnalyzer/Token.java	/^    WHILE		= 21,$/;"	f	class:Token
+WhileCommand	Triangle/AbstractSyntaxTrees/WhileCommand.java	/^  public WhileCommand (Expression eAST, Command cAST, SourcePosition thePosition) {$/;"	m	class:WhileCommand
+WhileCommand	Triangle/AbstractSyntaxTrees/WhileCommand.java	/^public class WhileCommand extends Command {$/;"	c
+accept	Triangle/SyntacticAnalyzer/Parser.java	/^  void accept (int tokenExpected) throws SyntaxError {$/;"	m	class:Parser
+acceptIt	Triangle/SyntacticAnalyzer/Parser.java	/^  void acceptIt() {$/;"	m	class:Parser
+accumulator	TAM/Interpreter.java	/^    accumulator;$/;"	f	class:Interpreter
+addDecl	Triangle/StdEnvironment.java	/^    addDecl, subtractDecl, multiplyDecl, divideDecl, moduloDecl,$/;"	f	class:StdEnvironment
+addDisplacement	TAM/Machine.java	/^    addDisplacement = 8,$/;"	f	class:Machine
+address	Triangle/CodeGenerator/KnownAddress.java	/^  public ObjectAddress address;$/;"	f	class:KnownAddress
+address	Triangle/CodeGenerator/KnownRoutine.java	/^  public ObjectAddress address;$/;"	f	class:KnownRoutine
+address	Triangle/CodeGenerator/UnknownAddress.java	/^  public ObjectAddress address;$/;"	f	class:UnknownAddress
+address	Triangle/CodeGenerator/UnknownRoutine.java	/^  public ObjectAddress address;$/;"	f	class:UnknownRoutine
+address	Triangle/CodeGenerator/UnknownValue.java	/^  public ObjectAddress address;$/;"	f	class:UnknownValue
+addressSize	TAM/Machine.java	/^    addressSize = 1,$/;"	f	class:Machine
+andDecl	Triangle/StdEnvironment.java	/^    andDecl, orDecl,$/;"	f	class:StdEnvironment
+andDisplacement	TAM/Machine.java	/^    andDisplacement = 3,$/;"	f	class:Machine
+anyType	Triangle/StdEnvironment.java	/^    booleanType, charType, integerType, anyType, errorType;$/;"	f	class:StdEnvironment
+attachParent	Triangle/TreeDrawer/LayoutVisitor.java	/^  private void attachParent(DrawingTree dt, int w) {$/;"	m	class:LayoutVisitor	file:
+attr	Triangle/ContextualAnalyzer/IdEntry.java	/^  protected Declaration attr;$/;"	f	class:IdEntry
+blankN	TAM/Disassembler.java	/^  private static void blankN() {$/;"	m	class:Disassembler	file:
+booleanDecl	Triangle/StdEnvironment.java	/^    booleanDecl, charDecl, integerDecl;$/;"	f	class:StdEnvironment
+booleanSize	TAM/Machine.java	/^    booleanSize = 1,$/;"	f	class:Machine
+booleanType	Triangle/StdEnvironment.java	/^    booleanType, charType, integerType, anyType, errorType;$/;"	f	class:StdEnvironment
+bridge	Triangle/TreeDrawer/LayoutVisitor.java	/^  private Polyline bridge (Polyline line1, int x1, int y1,$/;"	m	class:LayoutVisitor	file:
+callPrimitive	TAM/Interpreter.java	/^  static void callPrimitive (int primitiveDisplacement) {$/;"	m	class:Interpreter
+caption	Triangle/TreeDrawer/DrawingTree.java	/^  String  caption;$/;"	f	class:DrawingTree
+charDecl	Triangle/StdEnvironment.java	/^    booleanDecl, charDecl, integerDecl;$/;"	f	class:StdEnvironment
+charType	Triangle/StdEnvironment.java	/^    booleanType, charType, integerType, anyType, errorType;$/;"	f	class:StdEnvironment
+characterSize	TAM/Machine.java	/^    characterSize = 1,$/;"	f	class:Machine
+characterValuation	Triangle/CodeGenerator/Encoder.java	/^  public int characterValuation (String spelling) {$/;"	m	class:Encoder
+check	Triangle/ContextualAnalyzer/Checker.java	/^  public void check(Program ast) {$/;"	m	class:Checker
+checkFieldIdentifier	Triangle/ContextualAnalyzer/Checker.java	/^  private static TypeDenoter checkFieldIdentifier(FieldTypeDenoter ast, Identifier I) {$/;"	m	class:Checker	file:
+checkSpace	TAM/Interpreter.java	/^  static void checkSpace (int spaceNeeded) {$/;"	m	class:Interpreter
+checker	Triangle/Compiler.java	/^    private static Checker checker;$/;"	f	class:Compiler	file:
+checker	Triangle/Compiler2.java	/^  private static Checker checker;$/;"	f	class:Compiler2	file:
+children	Triangle/TreeDrawer/DrawingTree.java	/^  DrawingTree[] children;$/;"	f	class:DrawingTree
+chrDecl	Triangle/StdEnvironment.java	/^    chrDecl, ordDecl, eolDecl, eofDecl;$/;"	f	class:StdEnvironment
+closeScope	Triangle/ContextualAnalyzer/IdentificationTable.java	/^  public void closeScope () {$/;"	m	class:IdentificationTable
+closureSize	TAM/Machine.java	/^    closureSize = 2 * addressSize,$/;"	f	class:Machine
+code	TAM/Machine.java	/^  public static Instruction[] code = new Instruction[1024];$/;"	f	class:Machine
+compileProgram	Triangle/Compiler.java	/^    static boolean compileProgram (String sourceName, String objectName,$/;"	m	class:Compiler
+compileProgram	Triangle/Compiler2.java	/^  static boolean compileProgram (String sourceName, String objectName,$/;"	m	class:Compiler2
+content	TAM/Interpreter.java	/^  static int content (int r) {$/;"	m	class:Interpreter
+contour	Triangle/TreeDrawer/DrawingTree.java	/^  Polygon contour;$/;"	f	class:DrawingTree
+currentChar	TAM/Interpreter.java	/^  static int currentChar;$/;"	f	class:Interpreter
+currentChar	Triangle/SyntacticAnalyzer/Scanner.java	/^  private char currentChar;$/;"	f	class:Scanner	file:
+currentLine	Triangle/SyntacticAnalyzer/SourceFile.java	/^  int currentLine;$/;"	f	class:SourceFile
+currentSpelling	Triangle/SyntacticAnalyzer/Scanner.java	/^  private StringBuffer currentSpelling;$/;"	f	class:Scanner	file:
+currentToken	Triangle/SyntacticAnalyzer/Parser.java	/^  private Token currentToken;$/;"	f	class:Parser	file:
+currentlyScanningToken	Triangle/SyntacticAnalyzer/Scanner.java	/^  private boolean currentlyScanningToken;$/;"	f	class:Scanner	file:
+d	TAM/Instruction.java	/^  public int d;  \/\/ Operand$/;"	f	class:Instruction
+data	TAM/Interpreter.java	/^  static int[] data = new int[1024];$/;"	f	class:Interpreter
+debug	Triangle/SyntacticAnalyzer/Scanner.java	/^  private boolean debug;$/;"	f	class:Scanner	file:
+decl	Triangle/AbstractSyntaxTrees/Identifier.java	/^  public AST decl; \/\/ Either a Declaration or a FieldTypeDenoter$/;"	f	class:Identifier
+decl	Triangle/AbstractSyntaxTrees/Operator.java	/^  public Declaration decl;$/;"	f	class:Operator
+declareStdBinaryOp	Triangle/ContextualAnalyzer/Checker.java	/^  private BinaryOperatorDeclaration declareStdBinaryOp$/;"	m	class:Checker	file:
+declareStdConst	Triangle/ContextualAnalyzer/Checker.java	/^  private ConstDeclaration declareStdConst (String id, TypeDenoter constType) {$/;"	m	class:Checker	file:
+declareStdFunc	Triangle/ContextualAnalyzer/Checker.java	/^  private FuncDeclaration declareStdFunc (String id, FormalParameterSequence fps,$/;"	m	class:Checker	file:
+declareStdProc	Triangle/ContextualAnalyzer/Checker.java	/^  private ProcDeclaration declareStdProc (String id, FormalParameterSequence fps) {$/;"	m	class:Checker	file:
+declareStdType	Triangle/ContextualAnalyzer/Checker.java	/^  private TypeDeclaration declareStdType (String id, TypeDenoter typedenoter) {$/;"	m	class:Checker	file:
+declareStdUnaryOp	Triangle/ContextualAnalyzer/Checker.java	/^  private UnaryOperatorDeclaration declareStdUnaryOp$/;"	m	class:Checker	file:
+disassembleProgram	TAM/Disassembler.java	/^  private static void disassembleProgram() {$/;"	m	class:Disassembler	file:
+displacement	Triangle/CodeGenerator/EqualityRoutine.java	/^  public int displacement;$/;"	f	class:EqualityRoutine
+displacement	Triangle/CodeGenerator/ObjectAddress.java	/^  public int level, displacement;$/;"	f	class:ObjectAddress
+displacement	Triangle/CodeGenerator/PrimitiveRoutine.java	/^  public int displacement;$/;"	f	class:PrimitiveRoutine
+displayRegister	Triangle/CodeGenerator/Encoder.java	/^  private int displayRegister (int currentLevel, int objectLevel) {$/;"	m	class:Encoder	file:
+disposeDisplacement	TAM/Machine.java	/^    disposeDisplacement = 28;$/;"	f	class:Machine
+divDisplacement	TAM/Machine.java	/^    divDisplacement = 11,$/;"	f	class:Machine
+divideDecl	Triangle/StdEnvironment.java	/^    addDecl, subtractDecl, multiplyDecl, divideDecl, moduloDecl,$/;"	f	class:StdEnvironment
+draw	Triangle/TreeDrawer/Drawer.java	/^  public void draw(Program ast) {$/;"	m	class:Drawer
+drawer	Triangle/Compiler.java	/^    private static Drawer drawer;$/;"	f	class:Compiler	file:
+drawer	Triangle/Compiler2.java	/^  private static Drawer drawer;$/;"	f	class:Compiler2	file:
+drawer	Triangle/TreeDrawer/DrawerPanel.java	/^  private Drawer drawer;$/;"	f	class:DrawerPanel	file:
+dummyI	Triangle/ContextualAnalyzer/Checker.java	/^  private final static Identifier dummyI = new Identifier("", dummyPos);$/;"	f	class:Checker	file:
+dummyPos	Triangle/ContextualAnalyzer/Checker.java	/^  private static SourcePosition dummyPos = new SourcePosition();$/;"	f	class:Checker	file:
+dump	TAM/Interpreter.java	/^  static void dump() {$/;"	m	class:Interpreter
+duplicated	Triangle/AbstractSyntaxTrees/Declaration.java	/^  public boolean duplicated;$/;"	f	class:Declaration
+dx	Triangle/TreeDrawer/Polyline.java	/^    int      dx, dy;$/;"	f	class:Polyline
+dy	Triangle/TreeDrawer/Polyline.java	/^    int      dx, dy;$/;"	f	class:Polyline
+elaborateStdConst	Triangle/CodeGenerator/Encoder.java	/^  private final void elaborateStdConst (Declaration constDeclaration,$/;"	m	class:Encoder	file:
+elaborateStdEnvironment	Triangle/CodeGenerator/Encoder.java	/^  private final void elaborateStdEnvironment() {$/;"	m	class:Encoder	file:
+elaborateStdEqRoutine	Triangle/CodeGenerator/Encoder.java	/^  private final void elaborateStdEqRoutine (Declaration routineDeclaration,$/;"	m	class:Encoder	file:
+elaborateStdPrimRoutine	Triangle/CodeGenerator/Encoder.java	/^  private final void elaborateStdPrimRoutine (Declaration routineDeclaration,$/;"	m	class:Encoder	file:
+elaborateStdRoutine	Triangle/CodeGenerator/Encoder.java	/^  private final void elaborateStdRoutine (Declaration routineDeclaration,$/;"	m	class:Encoder	file:
+elemCount	Triangle/AbstractSyntaxTrees/ArrayAggregate.java	/^  public int elemCount;$/;"	f	class:ArrayAggregate
+emit	Triangle/CodeGenerator/Encoder.java	/^  private void emit (int op, int n, int r, int d) {$/;"	m	class:Encoder	file:
+enableDebugging	Triangle/SyntacticAnalyzer/Scanner.java	/^  public void enableDebugging() {$/;"	m	class:Scanner
+encodeFetch	Triangle/CodeGenerator/Encoder.java	/^  private void encodeFetch(Vname V, Frame frame, int valSize) {$/;"	m	class:Encoder	file:
+encodeFetchAddress	Triangle/CodeGenerator/Encoder.java	/^  private void encodeFetchAddress (Vname V, Frame frame) {$/;"	m	class:Encoder	file:
+encodeRun	Triangle/CodeGenerator/Encoder.java	/^  public final void encodeRun (Program theAST, boolean showingTable) {$/;"	m	class:Encoder
+encodeStore	Triangle/CodeGenerator/Encoder.java	/^  private void encodeStore(Vname V, Frame frame, int valSize) {$/;"	m	class:Encoder	file:
+encoder	Triangle/Compiler.java	/^    private static Encoder encoder;$/;"	f	class:Compiler	file:
+encoder	Triangle/Compiler2.java	/^  private static Encoder encoder;$/;"	f	class:Compiler2	file:
+enter	Triangle/ContextualAnalyzer/IdentificationTable.java	/^  public void enter (String id, Declaration attr) {$/;"	m	class:IdentificationTable
+entity	Triangle/AbstractSyntaxTrees/AST.java	/^  public RuntimeEntity  entity;$/;"	f	class:AST
+eofDecl	Triangle/StdEnvironment.java	/^    chrDecl, ordDecl, eolDecl, eofDecl;$/;"	f	class:StdEnvironment
+eofDisplacement	TAM/Machine.java	/^    eofDisplacement = 20,$/;"	f	class:Machine
+eolDecl	Triangle/StdEnvironment.java	/^    chrDecl, ordDecl, eolDecl, eofDecl;$/;"	f	class:StdEnvironment
+eolDisplacement	TAM/Machine.java	/^    eolDisplacement = 19,$/;"	f	class:Machine
+eqDisplacement	TAM/Machine.java	/^    eqDisplacement = 17,$/;"	f	class:Machine
+equal	TAM/Interpreter.java	/^  static boolean equal (int size, int addr1, int addr2) {$/;"	m	class:Interpreter
+equalDecl	Triangle/StdEnvironment.java	/^    equalDecl, unequalDecl, lessDecl, notlessDecl, greaterDecl, notgreaterDecl;$/;"	f	class:StdEnvironment
+equals	Triangle/AbstractSyntaxTrees/AnyTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:AnyTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/ArrayTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:ArrayTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/BoolTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:BoolTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/CharTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:CharTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/ClassTypeDenoter.java	/^	public boolean equals (Object obj) {$/;"	m	class:ClassTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/ConstFormalParameter.java	/^  public boolean equals (Object fpAST) {$/;"	m	class:ConstFormalParameter
+equals	Triangle/AbstractSyntaxTrees/EmptyFormalParameterSequence.java	/^  public boolean equals(Object fpsAST) {$/;"	m	class:EmptyFormalParameterSequence
+equals	Triangle/AbstractSyntaxTrees/ErrorTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:ErrorTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/FieldTypeDenoter.java	/^  public abstract boolean equals (Object obj);$/;"	m	class:FieldTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/FormalParameter.java	/^  public abstract boolean equals (Object fpAST);$/;"	m	class:FormalParameter
+equals	Triangle/AbstractSyntaxTrees/FormalParameterSequence.java	/^  public abstract boolean equals(Object fpsAST);$/;"	m	class:FormalParameterSequence
+equals	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^  public boolean equals (Object fpAST) {$/;"	m	class:FuncFormalParameter
+equals	Triangle/AbstractSyntaxTrees/IntTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:IntTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:MultipleFieldTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/MultipleFormalParameterSequence.java	/^  public boolean equals(Object fpsAST) {$/;"	m	class:MultipleFormalParameterSequence
+equals	Triangle/AbstractSyntaxTrees/ProcFormalParameter.java	/^  public boolean equals (Object fpAST) {$/;"	m	class:ProcFormalParameter
+equals	Triangle/AbstractSyntaxTrees/RecordTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:RecordTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/SimpleTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:SimpleTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/SingleFieldTypeDenoter.java	/^  public boolean equals (Object obj) {$/;"	m	class:SingleFieldTypeDenoter
+equals	Triangle/AbstractSyntaxTrees/SingleFormalParameterSequence.java	/^  public boolean equals(Object fpsAST) {$/;"	m	class:SingleFormalParameterSequence
+equals	Triangle/AbstractSyntaxTrees/TypeDenoter.java	/^  public abstract boolean equals(Object obj);$/;"	m	class:TypeDenoter
+equals	Triangle/AbstractSyntaxTrees/VarFormalParameter.java	/^  public boolean equals (Object fpAST) {$/;"	m	class:VarFormalParameter
+errorReporter	Triangle/SyntacticAnalyzer/Parser.java	/^  private ErrorReporter errorReporter;$/;"	f	class:Parser	file:
+errorType	Triangle/StdEnvironment.java	/^    booleanType, charType, integerType, anyType, errorType;$/;"	f	class:StdEnvironment
+establishStdEnvironment	Triangle/ContextualAnalyzer/Checker.java	/^  private void establishStdEnvironment () {$/;"	m	class:Checker	file:
+failedDataStoreFull	TAM/Interpreter.java	/^    running = 0, halted = 1, failedDataStoreFull = 2, failedInvalidCodeAddress = 3,$/;"	f	class:Interpreter
+failedIOError	TAM/Interpreter.java	/^    failedIOError = 7;$/;"	f	class:Interpreter
+failedInvalidCodeAddress	TAM/Interpreter.java	/^    running = 0, halted = 1, failedDataStoreFull = 2, failedInvalidCodeAddress = 3,$/;"	f	class:Interpreter
+failedInvalidInstruction	TAM/Interpreter.java	/^    failedInvalidInstruction = 4, failedOverflow = 5, failedZeroDivide = 6,$/;"	f	class:Interpreter
+failedOverflow	TAM/Interpreter.java	/^    failedInvalidInstruction = 4, failedOverflow = 5, failedZeroDivide = 6,$/;"	f	class:Interpreter
+failedZeroDivide	TAM/Interpreter.java	/^    failedInvalidInstruction = 4, failedOverflow = 5, failedZeroDivide = 6,$/;"	f	class:Interpreter
+falseDecl	Triangle/StdEnvironment.java	/^    falseDecl, trueDecl, maxintDecl;$/;"	f	class:StdEnvironment
+falseRep	TAM/Machine.java	/^    falseRep = 0,$/;"	f	class:Machine
+fieldOffset	Triangle/CodeGenerator/Field.java	/^  public int fieldOffset;$/;"	f	class:Field
+finish	Triangle/SyntacticAnalyzer/Parser.java	/^  void finish(SourcePosition position) {$/;"	m	class:Parser
+finish	Triangle/SyntacticAnalyzer/SourcePosition.java	/^  public int start, finish;$/;"	f	class:SourcePosition
+firstReservedWord	Triangle/SyntacticAnalyzer/Token.java	/^  private final static int	firstReservedWord = Token.ARRAY,$/;"	f	class:Token	file:
+fontMetrics	Triangle/TreeDrawer/LayoutVisitor.java	/^  private FontMetrics fontMetrics;$/;"	f	class:LayoutVisitor	file:
+frame	Triangle/TreeDrawer/Drawer.java	/^  private DrawerFrame frame;$/;"	f	class:Drawer	file:
+geDisplacement	TAM/Machine.java	/^    geDisplacement = 15,$/;"	f	class:Machine
+getCurrentLine	Triangle/SyntacticAnalyzer/SourceFile.java	/^  int getCurrentLine() {$/;"	m	class:SourceFile
+getDecl	Triangle/StdEnvironment.java	/^    getDecl, putDecl, getintDecl, putintDecl, geteolDecl, puteolDecl;$/;"	f	class:StdEnvironment
+getDisplacement	TAM/Machine.java	/^    getDisplacement = 21,$/;"	f	class:Machine
+getPosition	Triangle/AbstractSyntaxTrees/AST.java	/^  public SourcePosition getPosition() {$/;"	m	class:AST
+getSource	Triangle/SyntacticAnalyzer/SourceFile.java	/^  char getSource() {$/;"	m	class:SourceFile
+geteolDecl	Triangle/StdEnvironment.java	/^    getDecl, putDecl, getintDecl, putintDecl, geteolDecl, puteolDecl;$/;"	f	class:StdEnvironment
+geteolDisplacement	TAM/Machine.java	/^    geteolDisplacement = 23,$/;"	f	class:Machine
+getintDecl	Triangle/StdEnvironment.java	/^    getDecl, putDecl, getintDecl, putintDecl, geteolDecl, puteolDecl;$/;"	f	class:StdEnvironment
+getintDisplacement	TAM/Machine.java	/^    getintDisplacement = 25,$/;"	f	class:Machine
+greaterDecl	Triangle/StdEnvironment.java	/^    equalDecl, unequalDecl, lessDecl, notlessDecl, greaterDecl, notgreaterDecl;$/;"	f	class:StdEnvironment
+gtDisplacement	TAM/Machine.java	/^    gtDisplacement = 16,$/;"	f	class:Machine
+halted	TAM/Interpreter.java	/^    running = 0, halted = 1, failedDataStoreFull = 2, failedInvalidCodeAddress = 3,$/;"	f	class:Interpreter
+height	Triangle/TreeDrawer/DrawingTree.java	/^  int     width, height;$/;"	f	class:DrawingTree
+id	Triangle/ContextualAnalyzer/IdEntry.java	/^  protected String id;$/;"	f	class:IdEntry
+idDisplacement	TAM/Machine.java	/^    idDisplacement = 1,$/;"	f	class:Machine
+idTable	Triangle/ContextualAnalyzer/Checker.java	/^  private IdentificationTable idTable;$/;"	f	class:Checker	file:
+indexed	Triangle/AbstractSyntaxTrees/Vname.java	/^  public boolean variable, indexed;$/;"	f	class:Vname
+integerDecl	Triangle/StdEnvironment.java	/^    booleanDecl, charDecl, integerDecl;$/;"	f	class:StdEnvironment
+integerSize	TAM/Machine.java	/^    integerSize = 1,$/;"	f	class:Machine
+integerType	Triangle/StdEnvironment.java	/^    booleanType, charType, integerType, anyType, errorType;$/;"	f	class:StdEnvironment
+interpretProgram	TAM/Interpreter.java	/^  static void interpretProgram() {$/;"	m	class:Interpreter
+isDigit	Triangle/SyntacticAnalyzer/Scanner.java	/^  private boolean isDigit(char c) {$/;"	m	class:Scanner	file:
+isLetter	Triangle/SyntacticAnalyzer/Scanner.java	/^  private boolean isLetter(char c) {$/;"	m	class:Scanner	file:
+isOperator	Triangle/SyntacticAnalyzer/Scanner.java	/^  private boolean isOperator(char c) {$/;"	m	class:Scanner	file:
+isTrue	TAM/Interpreter.java	/^  static boolean isTrue (int datum) {$/;"	m	class:Interpreter
+join	Triangle/TreeDrawer/LayoutVisitor.java	/^  private int join (DrawingTree dt) {$/;"	m	class:LayoutVisitor	file:
+kind	Triangle/SyntacticAnalyzer/Token.java	/^  protected int kind;$/;"	f	class:Token
+lastReservedWord	Triangle/SyntacticAnalyzer/Token.java	/^  				lastReservedWord  = Token.WHILE;$/;"	f	class:Token	file:
+latest	Triangle/ContextualAnalyzer/IdentificationTable.java	/^  private IdEntry latest;$/;"	f	class:IdentificationTable	file:
+layoutBinary	Triangle/TreeDrawer/LayoutVisitor.java	/^  private DrawingTree layoutBinary (String name, AST child1, AST child2) {$/;"	m	class:LayoutVisitor	file:
+layoutCaption	Triangle/TreeDrawer/LayoutVisitor.java	/^  private DrawingTree layoutCaption (String name) {$/;"	m	class:LayoutVisitor	file:
+layoutNullary	Triangle/TreeDrawer/LayoutVisitor.java	/^  private DrawingTree layoutNullary (String name) {$/;"	m	class:LayoutVisitor	file:
+layoutQuaternary	Triangle/TreeDrawer/LayoutVisitor.java	/^  private DrawingTree layoutQuaternary (String name, AST child1, AST child2,$/;"	m	class:LayoutVisitor	file:
+layoutTernary	Triangle/TreeDrawer/LayoutVisitor.java	/^  private DrawingTree layoutTernary (String name, AST child1, AST child2,$/;"	m	class:LayoutVisitor	file:
+layoutUnary	Triangle/TreeDrawer/LayoutVisitor.java	/^  private DrawingTree layoutUnary (String name, AST child1) {$/;"	m	class:LayoutVisitor	file:
+leDisplacement	TAM/Machine.java	/^    leDisplacement = 14,$/;"	f	class:Machine
+lessDecl	Triangle/StdEnvironment.java	/^    equalDecl, unequalDecl, lessDecl, notlessDecl, greaterDecl, notgreaterDecl;$/;"	f	class:StdEnvironment
+level	Triangle/CodeGenerator/Frame.java	/^  protected int level;$/;"	f	class:Frame
+level	Triangle/CodeGenerator/ObjectAddress.java	/^  public int level, displacement;$/;"	f	class:ObjectAddress
+level	Triangle/ContextualAnalyzer/IdEntry.java	/^  protected int level;$/;"	f	class:IdEntry
+level	Triangle/ContextualAnalyzer/IdentificationTable.java	/^  private int level;$/;"	f	class:IdentificationTable	file:
+lexicalAnalyser	Triangle/SyntacticAnalyzer/Parser.java	/^  private Scanner lexicalAnalyser;$/;"	f	class:Parser	file:
+link	Triangle/TreeDrawer/Polyline.java	/^    Polyline link;$/;"	f	class:Polyline
+linkDataSize	TAM/Machine.java	/^    linkDataSize = 3 * addressSize,$/;"	f	class:Machine
+loadObjectProgram	TAM/Disassembler.java	/^  static void loadObjectProgram (String objectName) {$/;"	m	class:Disassembler
+loadObjectProgram	TAM/Interpreter.java	/^  static void loadObjectProgram (String objectName) {$/;"	m	class:Interpreter
+lower_head	Triangle/TreeDrawer/Polygon.java	/^    Polyline lower_head, lower_tail;$/;"	f	class:Polygon
+lower_tail	Triangle/TreeDrawer/Polygon.java	/^    Polyline lower_head, lower_tail;$/;"	f	class:Polygon
+ltDisplacement	TAM/Machine.java	/^    ltDisplacement = 13,$/;"	f	class:Machine
+main	TAM/Disassembler.java	/^  public static void main(String[] args) {$/;"	m	class:Disassembler
+main	TAM/Interpreter.java	/^  public static void main(String[] args) {$/;"	m	class:Interpreter
+main	Triangle/Compiler.java	/^    public static void main(String[] args) {$/;"	m	class:Compiler
+main	Triangle/Compiler2.java	/^  public static void main(String[] args) {$/;"	m	class:Compiler2
+maxRoutineLevel	TAM/Machine.java	/^    maxRoutineLevel = 7;$/;"	f	class:Machine
+maxRoutineLevel	Triangle/CodeGenerator/RuntimeEntity.java	/^  public final static int maxRoutineLevel = 7;$/;"	f	class:RuntimeEntity
+maxintDecl	Triangle/StdEnvironment.java	/^    falseDecl, trueDecl, maxintDecl;$/;"	f	class:StdEnvironment
+maxintRep	TAM/Machine.java	/^    maxintRep = 32767;$/;"	f	class:Machine
+merge	Triangle/TreeDrawer/LayoutVisitor.java	/^  private int merge(Polygon c1, Polygon c2) {$/;"	m	class:LayoutVisitor	file:
+modDisplacement	TAM/Machine.java	/^    modDisplacement = 12,$/;"	f	class:Machine
+moduloDecl	Triangle/StdEnvironment.java	/^    addDecl, subtractDecl, multiplyDecl, divideDecl, moduloDecl,$/;"	f	class:StdEnvironment
+multDisplacement	TAM/Machine.java	/^    multDisplacement = 10,$/;"	f	class:Machine
+multiplyDecl	Triangle/StdEnvironment.java	/^    addDecl, subtractDecl, multiplyDecl, divideDecl, moduloDecl,$/;"	f	class:StdEnvironment
+n	TAM/Instruction.java	/^  public int n;  \/\/ Length$/;"	f	class:Instruction
+neDisplacement	TAM/Machine.java	/^    neDisplacement = 18,$/;"	f	class:Machine
+negDisplacement	TAM/Machine.java	/^    negDisplacement = 7,$/;"	f	class:Machine
+newDisplacement	TAM/Machine.java	/^    newDisplacement = 27,$/;"	f	class:Machine
+nextInstrAddr	Triangle/CodeGenerator/Encoder.java	/^  private int nextInstrAddr;$/;"	f	class:Encoder	file:
+nodeColor	Triangle/TreeDrawer/DrawingTree.java	/^  private final Color nodeColor = new Color(250, 220, 100);$/;"	f	class:DrawingTree	file:
+notDecl	Triangle/StdEnvironment.java	/^    notDecl;$/;"	f	class:StdEnvironment
+notDisplacement	TAM/Machine.java	/^    notDisplacement = 2,$/;"	f	class:Machine
+notgreaterDecl	Triangle/StdEnvironment.java	/^    equalDecl, unequalDecl, lessDecl, notlessDecl, greaterDecl, notgreaterDecl;$/;"	f	class:StdEnvironment
+notlessDecl	Triangle/StdEnvironment.java	/^    equalDecl, unequalDecl, lessDecl, notlessDecl, greaterDecl, notgreaterDecl;$/;"	f	class:StdEnvironment
+numErrors	Triangle/ErrorReporter.java	/^  int numErrors;$/;"	f	class:ErrorReporter
+objectName	TAM/Disassembler.java	/^  static String objectName;$/;"	f	class:Disassembler
+objectName	TAM/Interpreter.java	/^  static String objectName;$/;"	f	class:Interpreter
+objectName	Triangle/Compiler.java	/^    static String objectName = "obj.tam";$/;"	f	class:Compiler
+objectName	Triangle/Compiler2.java	/^  static String objectName = "obj.tam";$/;"	f	class:Compiler2
+offset	Triangle/AbstractSyntaxTrees/Vname.java	/^  public int offset;$/;"	f	class:Vname
+offset	Triangle/TreeDrawer/DrawingTree.java	/^  Point   pos, offset;$/;"	f	class:DrawingTree
+offset	Triangle/TreeDrawer/LayoutVisitor.java	/^  private int offset (int p1, int p2, int a1, int a2, int b1, int b2) {$/;"	m	class:LayoutVisitor	file:
+op	TAM/Instruction.java	/^  public int op; \/\/ OpCode$/;"	f	class:Instruction
+openScope	Triangle/ContextualAnalyzer/IdentificationTable.java	/^  public void openScope () {$/;"	m	class:IdentificationTable
+orDecl	Triangle/StdEnvironment.java	/^    andDecl, orDecl,$/;"	f	class:StdEnvironment
+orDisplacement	TAM/Machine.java	/^    orDisplacement = 4,$/;"	f	class:Machine
+ordDecl	Triangle/StdEnvironment.java	/^    chrDecl, ordDecl, eolDecl, eofDecl;$/;"	f	class:StdEnvironment
+overflowChecked	TAM/Interpreter.java	/^  static int overflowChecked (long datum) {$/;"	m	class:Interpreter
+paint	Triangle/TreeDrawer/DrawingTree.java	/^  public void paint (Graphics graphics) {$/;"	m	class:DrawingTree
+paintAST	Triangle/TreeDrawer/Drawer.java	/^  public void paintAST (Graphics g) {$/;"	m	class:Drawer
+paintComponent	Triangle/TreeDrawer/DrawerPanel.java	/^  public void paintComponent (Graphics g) {$/;"	m	class:DrawerPanel
+panel	Triangle/TreeDrawer/Drawer.java	/^  private DrawerPanel panel;$/;"	f	class:Drawer	file:
+parent	Triangle/TreeDrawer/DrawingTree.java	/^  DrawingTree parent;$/;"	f	class:DrawingTree
+parseActualParameter	Triangle/SyntacticAnalyzer/Parser.java	/^  ActualParameter parseActualParameter() throws SyntaxError {$/;"	m	class:Parser
+parseActualParameterSequence	Triangle/SyntacticAnalyzer/Parser.java	/^  ActualParameterSequence parseActualParameterSequence() throws SyntaxError {$/;"	m	class:Parser
+parseArrayAggregate	Triangle/SyntacticAnalyzer/Parser.java	/^  ArrayAggregate parseArrayAggregate() throws SyntaxError {$/;"	m	class:Parser
+parseCharacterLiteral	Triangle/SyntacticAnalyzer/Parser.java	/^  CharacterLiteral parseCharacterLiteral() throws SyntaxError {$/;"	m	class:Parser
+parseCommand	Triangle/SyntacticAnalyzer/Parser.java	/^  Command parseCommand() throws SyntaxError {$/;"	m	class:Parser
+parseDeclaration	Triangle/SyntacticAnalyzer/Parser.java	/^  Declaration parseDeclaration() throws SyntaxError {$/;"	m	class:Parser
+parseExpression	Triangle/SyntacticAnalyzer/Parser.java	/^  Expression parseExpression() throws SyntaxError {$/;"	m	class:Parser
+parseFieldTypeDenoter	Triangle/SyntacticAnalyzer/Parser.java	/^  FieldTypeDenoter parseFieldTypeDenoter() throws SyntaxError {$/;"	m	class:Parser
+parseFormalParameter	Triangle/SyntacticAnalyzer/Parser.java	/^  FormalParameter parseFormalParameter() throws SyntaxError {$/;"	m	class:Parser
+parseFormalParameterSequence	Triangle/SyntacticAnalyzer/Parser.java	/^  FormalParameterSequence parseFormalParameterSequence() throws SyntaxError {$/;"	m	class:Parser
+parseIdentifier	Triangle/SyntacticAnalyzer/Parser.java	/^  Identifier parseIdentifier() throws SyntaxError {$/;"	m	class:Parser
+parseIntegerLiteral	Triangle/SyntacticAnalyzer/Parser.java	/^  IntegerLiteral parseIntegerLiteral() throws SyntaxError {$/;"	m	class:Parser
+parseOperator	Triangle/SyntacticAnalyzer/Parser.java	/^  Operator parseOperator() throws SyntaxError {$/;"	m	class:Parser
+parsePrimaryExpression	Triangle/SyntacticAnalyzer/Parser.java	/^  Expression parsePrimaryExpression() throws SyntaxError {$/;"	m	class:Parser
+parseProgram	Triangle/SyntacticAnalyzer/Parser.java	/^  public Program parseProgram() {$/;"	m	class:Parser
+parseProperActualParameterSequence	Triangle/SyntacticAnalyzer/Parser.java	/^  ActualParameterSequence parseProperActualParameterSequence() throws SyntaxError {$/;"	m	class:Parser
+parseProperFormalParameterSequence	Triangle/SyntacticAnalyzer/Parser.java	/^  FormalParameterSequence parseProperFormalParameterSequence() throws SyntaxError {$/;"	m	class:Parser
+parseRecordAggregate	Triangle/SyntacticAnalyzer/Parser.java	/^  RecordAggregate parseRecordAggregate() throws SyntaxError {$/;"	m	class:Parser
+parseRestOfVname	Triangle/SyntacticAnalyzer/Parser.java	/^  Vname parseRestOfVname(Identifier identifierAST) throws SyntaxError {$/;"	m	class:Parser
+parseSecondaryExpression	Triangle/SyntacticAnalyzer/Parser.java	/^  Expression parseSecondaryExpression() throws SyntaxError {$/;"	m	class:Parser
+parseSingleCommand	Triangle/SyntacticAnalyzer/Parser.java	/^  Command parseSingleCommand() throws SyntaxError {$/;"	m	class:Parser
+parseSingleDeclaration	Triangle/SyntacticAnalyzer/Parser.java	/^  Declaration parseSingleDeclaration() throws SyntaxError {$/;"	m	class:Parser
+parseTypeDenoter	Triangle/SyntacticAnalyzer/Parser.java	/^  TypeDenoter parseTypeDenoter() throws SyntaxError {$/;"	m	class:Parser
+parseVname	Triangle/SyntacticAnalyzer/Parser.java	/^  Vname parseVname () throws SyntaxError {$/;"	m	class:Parser
+parser	Triangle/Compiler.java	/^    private static Parser parser;$/;"	f	class:Compiler	file:
+parser	Triangle/Compiler2.java	/^  private static Parser parser;$/;"	f	class:Compiler2	file:
+patch	Triangle/CodeGenerator/Encoder.java	/^  private void patch (int addr, int d) {$/;"	m	class:Encoder	file:
+pos	Triangle/TreeDrawer/DrawingTree.java	/^  Point   pos, offset;$/;"	f	class:DrawingTree
+position	Triangle/AbstractSyntaxTrees/AST.java	/^  public SourcePosition	position;$/;"	f	class:AST
+position	Triangle/SyntacticAnalyzer/Token.java	/^  protected SourcePosition position;$/;"	f	class:Token
+position	Triangle/TreeDrawer/DrawingTree.java	/^  public void position (Point pos) {$/;"	m	class:DrawingTree
+predDisplacement	TAM/Machine.java	/^    predDisplacement = 6,$/;"	f	class:Machine
+previous	Triangle/ContextualAnalyzer/IdEntry.java	/^  protected IdEntry previous;$/;"	f	class:IdEntry
+previousTokenPosition	Triangle/SyntacticAnalyzer/Parser.java	/^  private SourcePosition previousTokenPosition;$/;"	f	class:Parser	file:
+putDecl	Triangle/StdEnvironment.java	/^    getDecl, putDecl, getintDecl, putintDecl, geteolDecl, puteolDecl;$/;"	f	class:StdEnvironment
+putDisplacement	TAM/Machine.java	/^    putDisplacement = 22,$/;"	f	class:Machine
+puteolDecl	Triangle/StdEnvironment.java	/^    getDecl, putDecl, getintDecl, putintDecl, geteolDecl, puteolDecl;$/;"	f	class:StdEnvironment
+puteolDisplacement	TAM/Machine.java	/^    puteolDisplacement = 24,$/;"	f	class:Machine
+putintDecl	Triangle/StdEnvironment.java	/^    getDecl, putDecl, getintDecl, putintDecl, geteolDecl, puteolDecl;$/;"	f	class:StdEnvironment
+putintDisplacement	TAM/Machine.java	/^    putintDisplacement = 26,$/;"	f	class:Machine
+r	TAM/Instruction.java	/^  public int r;  \/\/ RegisterNumber$/;"	f	class:Instruction
+read	TAM/Instruction.java	/^  public static Instruction read(DataInputStream input) throws IOException {$/;"	m	class:Instruction
+readInt	TAM/Interpreter.java	/^  static int readInt() throws java.io.IOException {$/;"	m	class:Interpreter
+reportError	Triangle/ErrorReporter.java	/^  public void reportError(String message, String tokenName, SourcePosition pos) {$/;"	m	class:ErrorReporter
+reportRestriction	Triangle/ErrorReporter.java	/^  public void reportRestriction(String message) {$/;"	m	class:ErrorReporter
+reportUndeclared	Triangle/ContextualAnalyzer/Checker.java	/^  private void reportUndeclared (Terminal leaf) {$/;"	m	class:Checker	file:
+reporter	Triangle/CodeGenerator/Encoder.java	/^  private ErrorReporter reporter;$/;"	f	class:Encoder	file:
+reporter	Triangle/Compiler.java	/^    private static ErrorReporter reporter;$/;"	f	class:Compiler	file:
+reporter	Triangle/Compiler2.java	/^  private static ErrorReporter reporter;$/;"	f	class:Compiler2	file:
+reporter	Triangle/ContextualAnalyzer/Checker.java	/^  private ErrorReporter reporter;$/;"	f	class:Checker	file:
+retrieve	Triangle/ContextualAnalyzer/IdentificationTable.java	/^  public Declaration retrieve (String id) {$/;"	m	class:IdentificationTable
+running	TAM/Interpreter.java	/^    running = 0, halted = 1, failedDataStoreFull = 2, failedInvalidCodeAddress = 3,$/;"	f	class:Interpreter
+saveObjectProgram	Triangle/CodeGenerator/Encoder.java	/^  public void saveObjectProgram(String objectName) {$/;"	m	class:Encoder
+scan	Triangle/SyntacticAnalyzer/Scanner.java	/^  public Token scan () {$/;"	m	class:Scanner
+scanSeparator	Triangle/SyntacticAnalyzer/Scanner.java	/^  private void scanSeparator() {$/;"	m	class:Scanner	file:
+scanToken	Triangle/SyntacticAnalyzer/Scanner.java	/^  private int scanToken() {$/;"	m	class:Scanner	file:
+scanner	Triangle/Compiler.java	/^    private static Scanner scanner;$/;"	f	class:Compiler	file:
+scanner	Triangle/Compiler2.java	/^  private static Scanner scanner;$/;"	f	class:Compiler2	file:
+setChildren	Triangle/TreeDrawer/DrawingTree.java	/^  public void setChildren(DrawingTree[] children) {$/;"	m	class:DrawingTree
+showStatus	TAM/Interpreter.java	/^  static void showStatus () {$/;"	m	class:Interpreter
+size	Triangle/CodeGenerator/Frame.java	/^  protected int size;$/;"	f	class:Frame
+size	Triangle/CodeGenerator/RuntimeEntity.java	/^  public int size;$/;"	f	class:RuntimeEntity
+source	Triangle/SyntacticAnalyzer/SourceFile.java	/^  java.io.FileInputStream source;$/;"	f	class:SourceFile
+sourceFile	Triangle/SyntacticAnalyzer/Scanner.java	/^  private SourceFile sourceFile;$/;"	f	class:Scanner	file:
+sourceFile	Triangle/SyntacticAnalyzer/SourceFile.java	/^  java.io.File sourceFile;$/;"	f	class:SourceFile
+spell	Triangle/SyntacticAnalyzer/Token.java	/^  public static String spell (int kind) {$/;"	m	class:Token
+spelling	Triangle/AbstractSyntaxTrees/Terminal.java	/^  public String spelling;$/;"	f	class:Terminal
+spelling	Triangle/SyntacticAnalyzer/Token.java	/^  protected String spelling;$/;"	f	class:Token
+start	Triangle/SyntacticAnalyzer/Parser.java	/^  void start(SourcePosition position) {$/;"	m	class:Parser
+start	Triangle/SyntacticAnalyzer/SourcePosition.java	/^  public int start, finish;$/;"	f	class:SourcePosition
+status	TAM/Interpreter.java	/^    CT, CP, ST, HT, LB, status;$/;"	f	class:Interpreter
+subDisplacement	TAM/Machine.java	/^    subDisplacement = 9,$/;"	f	class:Machine
+subtractDecl	Triangle/StdEnvironment.java	/^    addDecl, subtractDecl, multiplyDecl, divideDecl, moduloDecl,$/;"	f	class:StdEnvironment
+succDisplacement	TAM/Machine.java	/^    succDisplacement = 5,$/;"	f	class:Machine
+syntacticError	Triangle/SyntacticAnalyzer/Parser.java	/^  void syntacticError(String messageTemplate, String tokenQuoted) throws SyntaxError {$/;"	m	class:Parser
+tableDetailsReqd	Triangle/CodeGenerator/Encoder.java	/^  boolean tableDetailsReqd;$/;"	f	class:Encoder
+takeIt	Triangle/SyntacticAnalyzer/Scanner.java	/^  private void takeIt() {$/;"	m	class:Scanner	file:
+theAST	Triangle/Compiler.java	/^    private static Program theAST;$/;"	f	class:Compiler	file:
+theAST	Triangle/Compiler2.java	/^  private static Program theAST;$/;"	f	class:Compiler2	file:
+theAST	Triangle/TreeDrawer/Drawer.java	/^  private Program theAST;$/;"	f	class:Drawer	file:
+theDrawing	Triangle/TreeDrawer/Drawer.java	/^  private DrawingTree theDrawing;$/;"	f	class:Drawer	file:
+toInt	TAM/Interpreter.java	/^  static int toInt(boolean b) {$/;"	m	class:Interpreter
+toString	Triangle/SyntacticAnalyzer/SourcePosition.java	/^  public String toString() {$/;"	m	class:SourcePosition
+toString	Triangle/SyntacticAnalyzer/Token.java	/^  public String toString() {$/;"	m	class:Token
+tokenTable	Triangle/SyntacticAnalyzer/Token.java	/^  private static String[] tokenTable = new String[] {$/;"	f	class:Token	file:
+trueDecl	Triangle/StdEnvironment.java	/^    falseDecl, trueDecl, maxintDecl;$/;"	f	class:StdEnvironment
+trueRep	TAM/Machine.java	/^    trueRep = 1,$/;"	f	class:Machine
+type	Triangle/AbstractSyntaxTrees/Expression.java	/^  public TypeDenoter type;$/;"	f	class:Expression
+type	Triangle/AbstractSyntaxTrees/Identifier.java	/^  public TypeDenoter type;$/;"	f	class:Identifier
+type	Triangle/AbstractSyntaxTrees/RecordAggregate.java	/^  public FieldTypeDenoter type;$/;"	f	class:RecordAggregate
+type	Triangle/AbstractSyntaxTrees/Vname.java	/^  public TypeDenoter type;$/;"	f	class:Vname
+unequalDecl	Triangle/StdEnvironment.java	/^    equalDecl, unequalDecl, lessDecl, notlessDecl, greaterDecl, notgreaterDecl;$/;"	f	class:StdEnvironment
+upper_head	Triangle/TreeDrawer/Polygon.java	/^    Polyline upper_head, upper_tail;$/;"	f	class:Polygon
+upper_tail	Triangle/TreeDrawer/Polygon.java	/^    Polyline upper_head, upper_tail;$/;"	f	class:Polygon
+value	Triangle/CodeGenerator/KnownValue.java	/^  public int value;$/;"	f	class:KnownValue
+variable	Triangle/AbstractSyntaxTrees/Vname.java	/^  public boolean variable, indexed;$/;"	f	class:Vname
+visit	Triangle/AbstractSyntaxTrees/AST.java	/^  public abstract Object visit(Visitor v, Object o);$/;"	m	class:AST
+visit	Triangle/AbstractSyntaxTrees/AnyTypeDenoter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:AnyTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/ArrayExpression.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:ArrayExpression
+visit	Triangle/AbstractSyntaxTrees/ArrayTypeDenoter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:ArrayTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/AssignCommand.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:AssignCommand
+visit	Triangle/AbstractSyntaxTrees/BinaryExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:BinaryExpression
+visit	Triangle/AbstractSyntaxTrees/BinaryOperatorDeclaration.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:BinaryOperatorDeclaration
+visit	Triangle/AbstractSyntaxTrees/BoolTypeDenoter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:BoolTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/CallCommand.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:CallCommand
+visit	Triangle/AbstractSyntaxTrees/CallExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:CallExpression
+visit	Triangle/AbstractSyntaxTrees/CharTypeDenoter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:CharTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/CharacterExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:CharacterExpression
+visit	Triangle/AbstractSyntaxTrees/CharacterLiteral.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:CharacterLiteral
+visit	Triangle/AbstractSyntaxTrees/ClassTypeDenoter.java	/^	public Object visit (Visitor v, Object o) {$/;"	m	class:ClassTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/ConstActualParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:ConstActualParameter
+visit	Triangle/AbstractSyntaxTrees/ConstDeclaration.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:ConstDeclaration
+visit	Triangle/AbstractSyntaxTrees/ConstFormalParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:ConstFormalParameter
+visit	Triangle/AbstractSyntaxTrees/DotVname.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:DotVname
+visit	Triangle/AbstractSyntaxTrees/EmptyActualParameterSequence.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:EmptyActualParameterSequence
+visit	Triangle/AbstractSyntaxTrees/EmptyCommand.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:EmptyCommand
+visit	Triangle/AbstractSyntaxTrees/EmptyExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:EmptyExpression
+visit	Triangle/AbstractSyntaxTrees/EmptyFormalParameterSequence.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:EmptyFormalParameterSequence
+visit	Triangle/AbstractSyntaxTrees/ErrorTypeDenoter.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:ErrorTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/FuncActualParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:FuncActualParameter
+visit	Triangle/AbstractSyntaxTrees/FuncDeclaration.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:FuncDeclaration
+visit	Triangle/AbstractSyntaxTrees/FuncFormalParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:FuncFormalParameter
+visit	Triangle/AbstractSyntaxTrees/Identifier.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:Identifier
+visit	Triangle/AbstractSyntaxTrees/IfCommand.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:IfCommand
+visit	Triangle/AbstractSyntaxTrees/IfExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:IfExpression
+visit	Triangle/AbstractSyntaxTrees/IntTypeDenoter.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:IntTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/IntegerExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:IntegerExpression
+visit	Triangle/AbstractSyntaxTrees/IntegerLiteral.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:IntegerLiteral
+visit	Triangle/AbstractSyntaxTrees/LetCommand.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:LetCommand
+visit	Triangle/AbstractSyntaxTrees/LetExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:LetExpression
+visit	Triangle/AbstractSyntaxTrees/MultipleActualParameterSequence.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:MultipleActualParameterSequence
+visit	Triangle/AbstractSyntaxTrees/MultipleArrayAggregate.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:MultipleArrayAggregate
+visit	Triangle/AbstractSyntaxTrees/MultipleFieldTypeDenoter.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:MultipleFieldTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/MultipleFormalParameterSequence.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:MultipleFormalParameterSequence
+visit	Triangle/AbstractSyntaxTrees/MultipleRecordAggregate.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:MultipleRecordAggregate
+visit	Triangle/AbstractSyntaxTrees/Operator.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:Operator
+visit	Triangle/AbstractSyntaxTrees/ProcActualParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:ProcActualParameter
+visit	Triangle/AbstractSyntaxTrees/ProcDeclaration.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:ProcDeclaration
+visit	Triangle/AbstractSyntaxTrees/ProcFormalParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:ProcFormalParameter
+visit	Triangle/AbstractSyntaxTrees/Program.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:Program
+visit	Triangle/AbstractSyntaxTrees/RecordExpression.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:RecordExpression
+visit	Triangle/AbstractSyntaxTrees/RecordTypeDenoter.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:RecordTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/SequentialCommand.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:SequentialCommand
+visit	Triangle/AbstractSyntaxTrees/SequentialDeclaration.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:SequentialDeclaration
+visit	Triangle/AbstractSyntaxTrees/SimpleTypeDenoter.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:SimpleTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/SimpleVname.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:SimpleVname
+visit	Triangle/AbstractSyntaxTrees/SingleActualParameterSequence.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:SingleActualParameterSequence
+visit	Triangle/AbstractSyntaxTrees/SingleArrayAggregate.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:SingleArrayAggregate
+visit	Triangle/AbstractSyntaxTrees/SingleFieldTypeDenoter.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:SingleFieldTypeDenoter
+visit	Triangle/AbstractSyntaxTrees/SingleFormalParameterSequence.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:SingleFormalParameterSequence
+visit	Triangle/AbstractSyntaxTrees/SingleRecordAggregate.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:SingleRecordAggregate
+visit	Triangle/AbstractSyntaxTrees/SubscriptVname.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:SubscriptVname
+visit	Triangle/AbstractSyntaxTrees/TypeDeclaration.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:TypeDeclaration
+visit	Triangle/AbstractSyntaxTrees/UnaryExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:UnaryExpression
+visit	Triangle/AbstractSyntaxTrees/UnaryOperatorDeclaration.java	/^  public Object visit (Visitor v, Object o) {$/;"	m	class:UnaryOperatorDeclaration
+visit	Triangle/AbstractSyntaxTrees/VarActualParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:VarActualParameter
+visit	Triangle/AbstractSyntaxTrees/VarDeclaration.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:VarDeclaration
+visit	Triangle/AbstractSyntaxTrees/VarFormalParameter.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:VarFormalParameter
+visit	Triangle/AbstractSyntaxTrees/VnameExpression.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:VnameExpression
+visit	Triangle/AbstractSyntaxTrees/WhileCommand.java	/^  public Object visit(Visitor v, Object o) {$/;"	m	class:WhileCommand
+visitAnyTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitAnyTypeDenoter(AnyTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitAnyTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitAnyTypeDenoter(AnyTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitAnyTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitAnyTypeDenoter(AnyTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitAnyTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitAnyTypeDenoter(AnyTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitArrayExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitArrayExpression(ArrayExpression ast, Object o);$/;"	m	interface:Visitor
+visitArrayExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitArrayExpression(ArrayExpression ast, Object o) {$/;"	m	class:Encoder
+visitArrayExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitArrayExpression(ArrayExpression ast, Object o) {$/;"	m	class:Checker
+visitArrayExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitArrayExpression(ArrayExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitArrayTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitArrayTypeDenoter(ArrayTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitArrayTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitArrayTypeDenoter(ArrayTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitArrayTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitArrayTypeDenoter(ArrayTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitArrayTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitArrayTypeDenoter(ArrayTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitAssignCommand	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitAssignCommand(AssignCommand ast, Object o);$/;"	m	interface:Visitor
+visitAssignCommand	Triangle/CodeGenerator/Encoder.java	/^  public Object visitAssignCommand(AssignCommand ast, Object o) {$/;"	m	class:Encoder
+visitAssignCommand	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitAssignCommand(AssignCommand ast, Object o) {$/;"	m	class:Checker
+visitAssignCommand	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitAssignCommand(AssignCommand ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitBinaryExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitBinaryExpression(BinaryExpression ast, Object o);$/;"	m	interface:Visitor
+visitBinaryExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitBinaryExpression(BinaryExpression ast, Object o) {$/;"	m	class:Encoder
+visitBinaryExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitBinaryExpression(BinaryExpression ast, Object o) {$/;"	m	class:Checker
+visitBinaryExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitBinaryExpression(BinaryExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitBinaryOperatorDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitBinaryOperatorDeclaration(BinaryOperatorDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitBinaryOperatorDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitBinaryOperatorDeclaration(BinaryOperatorDeclaration ast,$/;"	m	class:Encoder
+visitBinaryOperatorDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitBinaryOperatorDeclaration(BinaryOperatorDeclaration ast, Object o) {$/;"	m	class:Checker
+visitBinaryOperatorDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitBinaryOperatorDeclaration(BinaryOperatorDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitBoolTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitBoolTypeDenoter(BoolTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitBoolTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitBoolTypeDenoter(BoolTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitBoolTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitBoolTypeDenoter(BoolTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitBoolTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitBoolTypeDenoter(BoolTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitCallCommand	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitCallCommand(CallCommand ast, Object o);$/;"	m	interface:Visitor
+visitCallCommand	Triangle/CodeGenerator/Encoder.java	/^  public Object visitCallCommand(CallCommand ast, Object o) {$/;"	m	class:Encoder
+visitCallCommand	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitCallCommand(CallCommand ast, Object o) {$/;"	m	class:Checker
+visitCallCommand	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitCallCommand(CallCommand ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitCallExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitCallExpression(CallExpression ast, Object o);$/;"	m	interface:Visitor
+visitCallExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitCallExpression(CallExpression ast, Object o) {$/;"	m	class:Encoder
+visitCallExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitCallExpression(CallExpression ast, Object o) {$/;"	m	class:Checker
+visitCallExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitCallExpression(CallExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitCharTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitCharTypeDenoter(CharTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitCharTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitCharTypeDenoter(CharTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitCharTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitCharTypeDenoter(CharTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitCharTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitCharTypeDenoter(CharTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitCharacterExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitCharacterExpression(CharacterExpression ast, Object o);$/;"	m	interface:Visitor
+visitCharacterExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitCharacterExpression(CharacterExpression ast,$/;"	m	class:Encoder
+visitCharacterExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitCharacterExpression(CharacterExpression ast, Object o) {$/;"	m	class:Checker
+visitCharacterExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitCharacterExpression(CharacterExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitCharacterLiteral	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitCharacterLiteral(CharacterLiteral ast, Object o);$/;"	m	interface:Visitor
+visitCharacterLiteral	Triangle/CodeGenerator/Encoder.java	/^  public Object visitCharacterLiteral(CharacterLiteral ast, Object o) {$/;"	m	class:Encoder
+visitCharacterLiteral	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitCharacterLiteral(CharacterLiteral CL, Object o) {$/;"	m	class:Checker
+visitCharacterLiteral	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitCharacterLiteral(CharacterLiteral ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitClassTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitClassTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitClassTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitClassTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitConstActualParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitConstActualParameter(ConstActualParameter ast, Object o);$/;"	m	interface:Visitor
+visitConstActualParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitConstActualParameter(ConstActualParameter ast, Object o) {$/;"	m	class:Encoder
+visitConstActualParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitConstActualParameter(ConstActualParameter ast, Object o) {$/;"	m	class:Checker
+visitConstActualParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitConstActualParameter(ConstActualParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitConstDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitConstDeclaration(ConstDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitConstDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitConstDeclaration(ConstDeclaration ast, Object o) {$/;"	m	class:Encoder
+visitConstDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitConstDeclaration(ConstDeclaration ast, Object o) {$/;"	m	class:Checker
+visitConstDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitConstDeclaration(ConstDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitConstFormalParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitConstFormalParameter(ConstFormalParameter ast, Object o);$/;"	m	interface:Visitor
+visitConstFormalParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitConstFormalParameter(ConstFormalParameter ast, Object o) {$/;"	m	class:Encoder
+visitConstFormalParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitConstFormalParameter(ConstFormalParameter ast, Object o) {$/;"	m	class:Checker
+visitConstFormalParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitConstFormalParameter(ConstFormalParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitDotVname	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitDotVname(DotVname ast, Object o);$/;"	m	interface:Visitor
+visitDotVname	Triangle/CodeGenerator/Encoder.java	/^  public Object visitDotVname(DotVname ast, Object o) {$/;"	m	class:Encoder
+visitDotVname	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitDotVname(DotVname ast, Object o) {$/;"	m	class:Checker
+visitDotVname	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitDotVname(DotVname ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitEmptyActualParameterSequence	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitEmptyActualParameterSequence(EmptyActualParameterSequence ast, Object o);$/;"	m	interface:Visitor
+visitEmptyActualParameterSequence	Triangle/CodeGenerator/Encoder.java	/^  public Object visitEmptyActualParameterSequence($/;"	m	class:Encoder
+visitEmptyActualParameterSequence	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitEmptyActualParameterSequence(EmptyActualParameterSequence ast, Object o) {$/;"	m	class:Checker
+visitEmptyActualParameterSequence	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitEmptyActualParameterSequence(EmptyActualParameterSequence ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitEmptyCommand	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitEmptyCommand(EmptyCommand ast, Object o);$/;"	m	interface:Visitor
+visitEmptyCommand	Triangle/CodeGenerator/Encoder.java	/^  public Object visitEmptyCommand(EmptyCommand ast, Object o) {$/;"	m	class:Encoder
+visitEmptyCommand	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitEmptyCommand(EmptyCommand ast, Object o) {$/;"	m	class:Checker
+visitEmptyCommand	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitEmptyCommand(EmptyCommand ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitEmptyExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitEmptyExpression(EmptyExpression ast, Object o);$/;"	m	interface:Visitor
+visitEmptyExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitEmptyExpression(EmptyExpression ast, Object o) {$/;"	m	class:Encoder
+visitEmptyExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitEmptyExpression(EmptyExpression ast, Object o) {$/;"	m	class:Checker
+visitEmptyExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitEmptyExpression(EmptyExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitEmptyFormalParameterSequence	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitEmptyFormalParameterSequence(EmptyFormalParameterSequence ast, Object o);$/;"	m	interface:Visitor
+visitEmptyFormalParameterSequence	Triangle/CodeGenerator/Encoder.java	/^  public Object visitEmptyFormalParameterSequence($/;"	m	class:Encoder
+visitEmptyFormalParameterSequence	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitEmptyFormalParameterSequence(EmptyFormalParameterSequence ast, Object o) {$/;"	m	class:Checker
+visitEmptyFormalParameterSequence	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitEmptyFormalParameterSequence(EmptyFormalParameterSequence ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitErrorTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitErrorTypeDenoter(ErrorTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitErrorTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitErrorTypeDenoter(ErrorTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitErrorTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitErrorTypeDenoter(ErrorTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitErrorTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitErrorTypeDenoter(ErrorTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitFuncActualParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitFuncActualParameter(FuncActualParameter ast, Object o);$/;"	m	interface:Visitor
+visitFuncActualParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitFuncActualParameter(FuncActualParameter ast, Object o) {$/;"	m	class:Encoder
+visitFuncActualParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitFuncActualParameter(FuncActualParameter ast, Object o) {$/;"	m	class:Checker
+visitFuncActualParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitFuncActualParameter(FuncActualParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitFuncDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitFuncDeclaration(FuncDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitFuncDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitFuncDeclaration(FuncDeclaration ast, Object o) {$/;"	m	class:Encoder
+visitFuncDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitFuncDeclaration(FuncDeclaration ast, Object o) {$/;"	m	class:Checker
+visitFuncDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitFuncDeclaration(FuncDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitFuncFormalParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitFuncFormalParameter(FuncFormalParameter ast, Object o);$/;"	m	interface:Visitor
+visitFuncFormalParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitFuncFormalParameter(FuncFormalParameter ast, Object o) {$/;"	m	class:Encoder
+visitFuncFormalParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitFuncFormalParameter(FuncFormalParameter ast, Object o) {$/;"	m	class:Checker
+visitFuncFormalParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitFuncFormalParameter(FuncFormalParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitIdentifier	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitIdentifier(Identifier ast, Object o);$/;"	m	interface:Visitor
+visitIdentifier	Triangle/CodeGenerator/Encoder.java	/^  public Object visitIdentifier(Identifier ast, Object o) {$/;"	m	class:Encoder
+visitIdentifier	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitIdentifier(Identifier I, Object o) {$/;"	m	class:Checker
+visitIdentifier	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitIdentifier(Identifier ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitIfCommand	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitIfCommand(IfCommand ast, Object o);$/;"	m	interface:Visitor
+visitIfCommand	Triangle/CodeGenerator/Encoder.java	/^  public Object visitIfCommand(IfCommand ast, Object o) {$/;"	m	class:Encoder
+visitIfCommand	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitIfCommand(IfCommand ast, Object o) {$/;"	m	class:Checker
+visitIfCommand	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitIfCommand(IfCommand ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitIfExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitIfExpression(IfExpression ast, Object o);$/;"	m	interface:Visitor
+visitIfExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitIfExpression(IfExpression ast, Object o) {$/;"	m	class:Encoder
+visitIfExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitIfExpression(IfExpression ast, Object o) {$/;"	m	class:Checker
+visitIfExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitIfExpression(IfExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitIntTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitIntTypeDenoter(IntTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitIntTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitIntTypeDenoter(IntTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitIntTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitIntTypeDenoter(IntTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitIntTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitIntTypeDenoter(IntTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitIntegerExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitIntegerExpression(IntegerExpression ast, Object o);$/;"	m	interface:Visitor
+visitIntegerExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitIntegerExpression(IntegerExpression ast, Object o) {$/;"	m	class:Encoder
+visitIntegerExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitIntegerExpression(IntegerExpression ast, Object o) {$/;"	m	class:Checker
+visitIntegerExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitIntegerExpression(IntegerExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitIntegerLiteral	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitIntegerLiteral(IntegerLiteral ast, Object o);$/;"	m	interface:Visitor
+visitIntegerLiteral	Triangle/CodeGenerator/Encoder.java	/^  public Object visitIntegerLiteral(IntegerLiteral ast, Object o) {$/;"	m	class:Encoder
+visitIntegerLiteral	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitIntegerLiteral(IntegerLiteral IL, Object o) {$/;"	m	class:Checker
+visitIntegerLiteral	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitIntegerLiteral(IntegerLiteral ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitLetCommand	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitLetCommand(LetCommand ast, Object o);$/;"	m	interface:Visitor
+visitLetCommand	Triangle/CodeGenerator/Encoder.java	/^  public Object visitLetCommand(LetCommand ast, Object o) {$/;"	m	class:Encoder
+visitLetCommand	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitLetCommand(LetCommand ast, Object o) {$/;"	m	class:Checker
+visitLetCommand	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitLetCommand(LetCommand ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitLetExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitLetExpression(LetExpression ast, Object o);$/;"	m	interface:Visitor
+visitLetExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitLetExpression(LetExpression ast, Object o) {$/;"	m	class:Encoder
+visitLetExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitLetExpression(LetExpression ast, Object o) {$/;"	m	class:Checker
+visitLetExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitLetExpression(LetExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitMultipleActualParameterSequence	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitMultipleActualParameterSequence(MultipleActualParameterSequence ast, Object o);$/;"	m	interface:Visitor
+visitMultipleActualParameterSequence	Triangle/CodeGenerator/Encoder.java	/^  public Object visitMultipleActualParameterSequence($/;"	m	class:Encoder
+visitMultipleActualParameterSequence	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitMultipleActualParameterSequence(MultipleActualParameterSequence ast, Object o) {$/;"	m	class:Checker
+visitMultipleActualParameterSequence	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitMultipleActualParameterSequence(MultipleActualParameterSequence ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitMultipleArrayAggregate	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitMultipleArrayAggregate(MultipleArrayAggregate ast, Object o);$/;"	m	interface:Visitor
+visitMultipleArrayAggregate	Triangle/CodeGenerator/Encoder.java	/^  public Object visitMultipleArrayAggregate(MultipleArrayAggregate ast,$/;"	m	class:Encoder
+visitMultipleArrayAggregate	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitMultipleArrayAggregate(MultipleArrayAggregate ast, Object o) {$/;"	m	class:Checker
+visitMultipleArrayAggregate	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitMultipleArrayAggregate(MultipleArrayAggregate ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitMultipleFieldTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitMultipleFieldTypeDenoter(MultipleFieldTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitMultipleFieldTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitMultipleFieldTypeDenoter(MultipleFieldTypeDenoter ast,$/;"	m	class:Encoder
+visitMultipleFieldTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitMultipleFieldTypeDenoter(MultipleFieldTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitMultipleFieldTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitMultipleFieldTypeDenoter(MultipleFieldTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitMultipleFormalParameterSequence	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitMultipleFormalParameterSequence(MultipleFormalParameterSequence ast, Object o);$/;"	m	interface:Visitor
+visitMultipleFormalParameterSequence	Triangle/CodeGenerator/Encoder.java	/^  public Object visitMultipleFormalParameterSequence($/;"	m	class:Encoder
+visitMultipleFormalParameterSequence	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitMultipleFormalParameterSequence(MultipleFormalParameterSequence ast, Object o) {$/;"	m	class:Checker
+visitMultipleFormalParameterSequence	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitMultipleFormalParameterSequence(MultipleFormalParameterSequence ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitMultipleRecordAggregate	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitMultipleRecordAggregate(MultipleRecordAggregate ast, Object o);$/;"	m	interface:Visitor
+visitMultipleRecordAggregate	Triangle/CodeGenerator/Encoder.java	/^  public Object visitMultipleRecordAggregate(MultipleRecordAggregate ast,$/;"	m	class:Encoder
+visitMultipleRecordAggregate	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitMultipleRecordAggregate(MultipleRecordAggregate ast, Object o) {$/;"	m	class:Checker
+visitMultipleRecordAggregate	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitMultipleRecordAggregate(MultipleRecordAggregate ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitOperator	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitOperator(Operator ast, Object o);$/;"	m	interface:Visitor
+visitOperator	Triangle/CodeGenerator/Encoder.java	/^  public Object visitOperator(Operator ast, Object o) {$/;"	m	class:Encoder
+visitOperator	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitOperator(Operator O, Object o) {$/;"	m	class:Checker
+visitOperator	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitOperator(Operator ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitProcActualParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitProcActualParameter(ProcActualParameter ast, Object o);$/;"	m	interface:Visitor
+visitProcActualParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitProcActualParameter(ProcActualParameter ast, Object o) {$/;"	m	class:Encoder
+visitProcActualParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitProcActualParameter(ProcActualParameter ast, Object o) {$/;"	m	class:Checker
+visitProcActualParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitProcActualParameter(ProcActualParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitProcDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitProcDeclaration(ProcDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitProcDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitProcDeclaration(ProcDeclaration ast, Object o) {$/;"	m	class:Encoder
+visitProcDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitProcDeclaration(ProcDeclaration ast, Object o) {$/;"	m	class:Checker
+visitProcDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitProcDeclaration(ProcDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitProcFormalParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitProcFormalParameter(ProcFormalParameter ast, Object o);$/;"	m	interface:Visitor
+visitProcFormalParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitProcFormalParameter(ProcFormalParameter ast, Object o) {$/;"	m	class:Encoder
+visitProcFormalParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitProcFormalParameter(ProcFormalParameter ast, Object o) {$/;"	m	class:Checker
+visitProcFormalParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitProcFormalParameter(ProcFormalParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitProgram	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitProgram(Program ast, Object o);$/;"	m	interface:Visitor
+visitProgram	Triangle/CodeGenerator/Encoder.java	/^  public Object visitProgram(Program ast, Object o) {$/;"	m	class:Encoder
+visitProgram	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitProgram(Program ast, Object o) {$/;"	m	class:Checker
+visitProgram	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitProgram(Program ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitRecordExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitRecordExpression(RecordExpression ast, Object o);$/;"	m	interface:Visitor
+visitRecordExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitRecordExpression(RecordExpression ast, Object o){$/;"	m	class:Encoder
+visitRecordExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitRecordExpression(RecordExpression ast, Object o) {$/;"	m	class:Checker
+visitRecordExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitRecordExpression(RecordExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitRecordTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitRecordTypeDenoter(RecordTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitRecordTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitRecordTypeDenoter(RecordTypeDenoter ast, Object o) {$/;"	m	class:Encoder
+visitRecordTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitRecordTypeDenoter(RecordTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitRecordTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitRecordTypeDenoter(RecordTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSequentialCommand	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSequentialCommand(SequentialCommand ast, Object o);$/;"	m	interface:Visitor
+visitSequentialCommand	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSequentialCommand(SequentialCommand ast, Object o) {$/;"	m	class:Encoder
+visitSequentialCommand	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSequentialCommand(SequentialCommand ast, Object o) {$/;"	m	class:Checker
+visitSequentialCommand	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSequentialCommand(SequentialCommand ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSequentialDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSequentialDeclaration(SequentialDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitSequentialDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSequentialDeclaration(SequentialDeclaration ast, Object o) {$/;"	m	class:Encoder
+visitSequentialDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSequentialDeclaration(SequentialDeclaration ast, Object o) {$/;"	m	class:Checker
+visitSequentialDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSequentialDeclaration(SequentialDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSimpleTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSimpleTypeDenoter(SimpleTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitSimpleTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSimpleTypeDenoter(SimpleTypeDenoter ast,$/;"	m	class:Encoder
+visitSimpleTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSimpleTypeDenoter(SimpleTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitSimpleTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSimpleTypeDenoter(SimpleTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSimpleVname	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSimpleVname(SimpleVname ast, Object o);$/;"	m	interface:Visitor
+visitSimpleVname	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSimpleVname(SimpleVname ast, Object o) {$/;"	m	class:Encoder
+visitSimpleVname	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSimpleVname(SimpleVname ast, Object o) {$/;"	m	class:Checker
+visitSimpleVname	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSimpleVname(SimpleVname ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSingleActualParameterSequence	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSingleActualParameterSequence(SingleActualParameterSequence ast, Object o);$/;"	m	interface:Visitor
+visitSingleActualParameterSequence	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSingleActualParameterSequence($/;"	m	class:Encoder
+visitSingleActualParameterSequence	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSingleActualParameterSequence(SingleActualParameterSequence ast, Object o) {$/;"	m	class:Checker
+visitSingleActualParameterSequence	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSingleActualParameterSequence(SingleActualParameterSequence ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSingleArrayAggregate	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSingleArrayAggregate(SingleArrayAggregate ast, Object o);$/;"	m	interface:Visitor
+visitSingleArrayAggregate	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSingleArrayAggregate(SingleArrayAggregate ast, Object o) {$/;"	m	class:Encoder
+visitSingleArrayAggregate	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSingleArrayAggregate(SingleArrayAggregate ast, Object o) {$/;"	m	class:Checker
+visitSingleArrayAggregate	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSingleArrayAggregate(SingleArrayAggregate ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSingleFieldTypeDenoter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSingleFieldTypeDenoter(SingleFieldTypeDenoter ast, Object o);$/;"	m	interface:Visitor
+visitSingleFieldTypeDenoter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSingleFieldTypeDenoter(SingleFieldTypeDenoter ast,$/;"	m	class:Encoder
+visitSingleFieldTypeDenoter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSingleFieldTypeDenoter(SingleFieldTypeDenoter ast, Object o) {$/;"	m	class:Checker
+visitSingleFieldTypeDenoter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSingleFieldTypeDenoter(SingleFieldTypeDenoter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSingleFormalParameterSequence	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSingleFormalParameterSequence(SingleFormalParameterSequence ast, Object o);$/;"	m	interface:Visitor
+visitSingleFormalParameterSequence	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSingleFormalParameterSequence($/;"	m	class:Encoder
+visitSingleFormalParameterSequence	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSingleFormalParameterSequence(SingleFormalParameterSequence ast, Object o) {$/;"	m	class:Checker
+visitSingleFormalParameterSequence	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSingleFormalParameterSequence(SingleFormalParameterSequence ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSingleRecordAggregate	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSingleRecordAggregate(SingleRecordAggregate ast, Object o);$/;"	m	interface:Visitor
+visitSingleRecordAggregate	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSingleRecordAggregate(SingleRecordAggregate ast,$/;"	m	class:Encoder
+visitSingleRecordAggregate	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSingleRecordAggregate(SingleRecordAggregate ast, Object o) {$/;"	m	class:Checker
+visitSingleRecordAggregate	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSingleRecordAggregate(SingleRecordAggregate ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitSubscriptVname	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitSubscriptVname(SubscriptVname ast, Object o);$/;"	m	interface:Visitor
+visitSubscriptVname	Triangle/CodeGenerator/Encoder.java	/^  public Object visitSubscriptVname(SubscriptVname ast, Object o) {$/;"	m	class:Encoder
+visitSubscriptVname	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitSubscriptVname(SubscriptVname ast, Object o) {$/;"	m	class:Checker
+visitSubscriptVname	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitSubscriptVname(SubscriptVname ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitTypeDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitTypeDeclaration(TypeDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitTypeDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitTypeDeclaration(TypeDeclaration ast, Object o) {$/;"	m	class:Encoder
+visitTypeDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitTypeDeclaration(TypeDeclaration ast, Object o) {$/;"	m	class:Checker
+visitTypeDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitTypeDeclaration(TypeDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitUnaryExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitUnaryExpression(UnaryExpression ast, Object o);$/;"	m	interface:Visitor
+visitUnaryExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitUnaryExpression(UnaryExpression ast, Object o) {$/;"	m	class:Encoder
+visitUnaryExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitUnaryExpression(UnaryExpression ast, Object o) {$/;"	m	class:Checker
+visitUnaryExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitUnaryExpression(UnaryExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitUnaryOperatorDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitUnaryOperatorDeclaration(UnaryOperatorDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitUnaryOperatorDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitUnaryOperatorDeclaration(UnaryOperatorDeclaration ast,$/;"	m	class:Encoder
+visitUnaryOperatorDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitUnaryOperatorDeclaration(UnaryOperatorDeclaration ast, Object o) {$/;"	m	class:Checker
+visitUnaryOperatorDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitUnaryOperatorDeclaration(UnaryOperatorDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitVarActualParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitVarActualParameter(VarActualParameter ast, Object o);$/;"	m	interface:Visitor
+visitVarActualParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitVarActualParameter(VarActualParameter ast, Object o) {$/;"	m	class:Encoder
+visitVarActualParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitVarActualParameter(VarActualParameter ast, Object o) {$/;"	m	class:Checker
+visitVarActualParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitVarActualParameter(VarActualParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitVarDeclaration	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitVarDeclaration(VarDeclaration ast, Object o);$/;"	m	interface:Visitor
+visitVarDeclaration	Triangle/CodeGenerator/Encoder.java	/^  public Object visitVarDeclaration(VarDeclaration ast, Object o) {$/;"	m	class:Encoder
+visitVarDeclaration	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitVarDeclaration(VarDeclaration ast, Object o) {$/;"	m	class:Checker
+visitVarDeclaration	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitVarDeclaration(VarDeclaration ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitVarFormalParameter	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitVarFormalParameter(VarFormalParameter ast, Object o);$/;"	m	interface:Visitor
+visitVarFormalParameter	Triangle/CodeGenerator/Encoder.java	/^  public Object visitVarFormalParameter(VarFormalParameter ast, Object o) {$/;"	m	class:Encoder
+visitVarFormalParameter	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitVarFormalParameter(VarFormalParameter ast, Object o) {$/;"	m	class:Checker
+visitVarFormalParameter	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitVarFormalParameter(VarFormalParameter ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitVnameExpression	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitVnameExpression(VnameExpression ast, Object o);$/;"	m	interface:Visitor
+visitVnameExpression	Triangle/CodeGenerator/Encoder.java	/^  public Object visitVnameExpression(VnameExpression ast, Object o) {$/;"	m	class:Encoder
+visitVnameExpression	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitVnameExpression(VnameExpression ast, Object o) {$/;"	m	class:Checker
+visitVnameExpression	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitVnameExpression(VnameExpression ast, Object obj) {$/;"	m	class:LayoutVisitor
+visitWhileCommand	Triangle/AbstractSyntaxTrees/Visitor.java	/^  public abstract Object visitWhileCommand(WhileCommand ast, Object o);$/;"	m	interface:Visitor
+visitWhileCommand	Triangle/CodeGenerator/Encoder.java	/^  public Object visitWhileCommand(WhileCommand ast, Object o) {$/;"	m	class:Encoder
+visitWhileCommand	Triangle/ContextualAnalyzer/Checker.java	/^  public Object visitWhileCommand(WhileCommand ast, Object o) {$/;"	m	class:Checker
+visitWhileCommand	Triangle/TreeDrawer/LayoutVisitor.java	/^  public Object visitWhileCommand(WhileCommand ast, Object obj) {$/;"	m	class:LayoutVisitor
+width	Triangle/TreeDrawer/DrawingTree.java	/^  int     width, height;$/;"	f	class:DrawingTree
+write	TAM/Instruction.java	/^  public void write(DataOutputStream output) throws IOException {$/;"	m	class:Instruction
+writeD	TAM/Disassembler.java	/^  private static void writeD (int d) {$/;"	m	class:Disassembler	file:
+writeInstruction	TAM/Disassembler.java	/^  private static void writeInstruction (Instruction instr) {$/;"	m	class:Disassembler	file:
+writeN	TAM/Disassembler.java	/^  private static void writeN (int n) {$/;"	m	class:Disassembler	file:
+writePrimitive	TAM/Disassembler.java	/^  private static void writePrimitive (int d) {$/;"	m	class:Disassembler	file:
+writeR	TAM/Disassembler.java	/^  private static void writeR (char leftbracket, int r, char rightbracket) {$/;"	m	class:Disassembler	file:
+writeTableDetails	Triangle/CodeGenerator/Encoder.java	/^  public static void writeTableDetails(AST ast) {$/;"	m	class:Encoder
