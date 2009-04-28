@@ -282,6 +282,12 @@ public class Parser {
           accept(Token.RPAREN);
           finish(commandPos);
           commandAST = new CallCommand(iAST, apsAST, commandPos);
+/*// JOE      
+	} else if (currentToken.kind == Token.DOT) {
+		acceptIt();
+		acceptIt();
+		// Look into: parseRestOfVname(Identifier identifierAST)
+	}*/
 
         } else {
 
