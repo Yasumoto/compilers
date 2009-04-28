@@ -674,27 +674,6 @@ public class Parser {
       }
       break;
 
-    case Token.CLASS:
-      {
-	Identifier iAST;
-        acceptIt();
-	if (currentToken.kind == Token.LPAREN)
-	{
-	 acceptIt();
-	 iAST = parseIdentifier();
-	 accept(Token.RPAREN);
-	}
-	else
-	{
-		iAST = null;
-	}
-
-        Declaration dAST = parseDeclaration();
-	accept(Token.END);
-        finish(declarationPos);
-        declarationAST = new ClassTypeDenoter(iAST, dAST, declarationPos);
-      }
-      break;
 
     default:
       syntacticError("\"%\" cannot start a declaration",
@@ -949,6 +928,20 @@ public class Parser {
         accept(Token.END);
         finish(typePos);
         typeAST = new RecordTypeDenoter(fAST, typePos);
+      }
+      break;
+
+// JOE
+    case Token.CLASS:
+      {
+	acceptIt();
+        Identifier iAST = parseIdentifier();
+        acceptIt();
+
+        Declaration dAST = parseDeclaration();
+	accept(Token.END);
+        finish(typePos);
+        typeAST = new ClassTypeDenoter(iAST, dAST, typePos);
       }
       break;
 

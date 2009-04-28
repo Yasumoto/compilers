@@ -46,7 +46,8 @@ public class Drawer {
     theDrawing = (DrawingTree) theAST.visit(layout, null);
     theDrawing.position(new Point(2048, 10));
 
-    frame.show();
+    //Updated by JOE
+    frame.setVisible(true);
   }
 
   public void paintAST (Graphics g) {

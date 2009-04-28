@@ -9,7 +9,7 @@ package Triangle.AbstractSyntaxTrees;
 
 import Triangle.SyntacticAnalyzer.SourcePosition;
 
-public class ClassTypeDenoter extends Declaration {
+public class ClassTypeDenoter extends TypeDenoter {
 	public ClassTypeDenoter ( Identifier iAST, Declaration dAST, 
 					SourcePosition thePosition ) {
 		super(thePosition);
