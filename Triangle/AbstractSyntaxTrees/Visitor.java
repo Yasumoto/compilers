@@ -89,6 +89,7 @@ public interface Visitor {
 
   //Joe
   public abstract Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o);
+  public abstract Object visitDashVname(DashVname ast, Object o);
 
   public abstract Object visitMultipleFieldTypeDenoter(MultipleFieldTypeDenoter ast, Object o);
   public abstract Object visitSingleFieldTypeDenoter(SingleFieldTypeDenoter ast, Object o);

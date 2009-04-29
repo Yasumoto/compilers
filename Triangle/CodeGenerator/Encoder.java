@@ -69,7 +69,9 @@ import Triangle.AbstractSyntaxTrees.ProcFormalParameter;
 import Triangle.AbstractSyntaxTrees.Program;
 import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
+//JOE
 import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
+import Triangle.AbstractSyntaxTrees.DashVname;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
 import Triangle.AbstractSyntaxTrees.SimpleTypeDenoter;
@@ -684,6 +686,17 @@ public final class Encoder implements Visitor {
 
   // Value-or-variable names
   public Object visitDotVname(DotVname ast, Object o) {
+    Frame frame = (Frame) o;
+    RuntimeEntity baseObject = (RuntimeEntity) ast.V.visit(this, frame);
+    ast.offset = ast.V.offset + ((Field) ast.I.decl.entity).fieldOffset;
+                   // I.decl points to the appropriate record field
+    ast.indexed = ast.V.indexed;
+    return baseObject;
+  }
+
+  //JOE
+  // Value-or-variable names
+  public Object visitDashVname(DashVname ast, Object o) {
     Frame frame = (Frame) o;
     RuntimeEntity baseObject = (RuntimeEntity) ast.V.visit(this, frame);
     ast.offset = ast.V.offset + ((Field) ast.I.decl.entity).fieldOffset;

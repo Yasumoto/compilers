@@ -104,7 +104,7 @@ final class Token extends Object {
                             
     // special tokens...
     EOT			= 34,
-    ERROR		= 35;
+    ERROR		= 35,
 
     //Joe token
     DASH		= 36;

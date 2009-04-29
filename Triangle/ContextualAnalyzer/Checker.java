@@ -64,8 +64,9 @@ import Triangle.AbstractSyntaxTrees.ProcFormalParameter;
 import Triangle.AbstractSyntaxTrees.Program;
 import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
-// Joe
+// JOE
 import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
+import Triangle.AbstractSyntaxTrees.DashVname;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
 import Triangle.AbstractSyntaxTrees.SimpleTypeDenoter;
@@ -689,6 +690,22 @@ public final class Checker implements Visitor {
   // given object.
 
   public Object visitDotVname(DotVname ast, Object o) {
+    ast.type = null;
+    TypeDenoter vType = (TypeDenoter) ast.V.visit(this, null);
+    ast.variable = ast.V.variable;
+    if (! (vType instanceof RecordTypeDenoter))
+      reporter.reportError ("record expected here", "", ast.V.position);
+    else {
+      ast.type = checkFieldIdentifier(((RecordTypeDenoter) vType).FT, ast.I);
+      if (ast.type == StdEnvironment.errorType)
+        reporter.reportError ("no field \"%\" in this record type",
+                              ast.I.spelling, ast.I.position);
+    }
+    return ast.type;
+  }
+
+  //JOE
+  public Object visitDashVname(DashVname ast, Object o) {
     ast.type = null;
     TypeDenoter vType = (TypeDenoter) ast.V.visit(this, null);
     ast.variable = ast.V.variable;
