@@ -106,6 +106,9 @@ final class Token extends Object {
     EOT			= 34,
     ERROR		= 35;
 
+    //Joe token
+    DASH		= 36;
+
   private static String[] tokenTable = new String[] {
     "<int>",
     "<char>",
@@ -142,7 +145,8 @@ final class Token extends Object {
     "{",
     "}",
     "",
-    "<error>"
+    "<error>",
+    "-"
   };
 
   private final static int	firstReservedWord = Token.ARRAY,

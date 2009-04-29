@@ -26,7 +26,9 @@ import Triangle.AbstractSyntaxTrees.CallCommand;
 import Triangle.AbstractSyntaxTrees.CallExpression;
 import Triangle.AbstractSyntaxTrees.CharacterExpression;
 import Triangle.AbstractSyntaxTrees.CharacterLiteral;
+//JOE
 import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
+import Triangle.AbstractSyntaxTrees.DashVname;
 import Triangle.AbstractSyntaxTrees.Command;
 import Triangle.AbstractSyntaxTrees.ConstActualParameter;
 import Triangle.AbstractSyntaxTrees.ConstDeclaration;
@@ -568,13 +570,19 @@ public class Parser {
     vnamePos = identifierAST.position;
     Vname vAST = new SimpleVname(identifierAST, vnamePos);
 
+// Begin JOE changes
     while (currentToken.kind == Token.DOT ||
-           currentToken.kind == Token.LBRACKET) {
+           currentToken.kind == Token.LBRACKET ||
+	   currentToken.kind == Token.DASH) {
 
       if (currentToken.kind == Token.DOT) {
         acceptIt();
         Identifier iAST = parseIdentifier();
         vAST = new DotVname(vAST, iAST, vnamePos);
+      } else if (currentToken.kind == Token.DASH) {
+	      acceptIt();
+	      Identifier iAST = parseIdentifier();
+	      vAST = new DashVname(vAST, iAST, vnamePos);
       } else {
         acceptIt();
         Expression eAST = parseExpression();
