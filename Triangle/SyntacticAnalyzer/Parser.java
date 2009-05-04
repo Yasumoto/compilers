@@ -582,7 +582,10 @@ public class Parser {
       } else if (currentToken.kind == Token.DASH) {
 	      acceptIt();
 	      Identifier iAST = parseIdentifier();
-	      vAST = new DashVname(vAST, iAST, vnamePos);
+	      accept(Token.LPAREN);
+	      ActualParameterSequence apsAST = parseActualParameterSequence();
+              accept(Token.RPAREN);
+	      vAST = new DashVname(vAST, iAST, apsAST, vnamePos);
       } else {
         acceptIt();
         Expression eAST = parseExpression();

@@ -18,10 +18,11 @@ import Triangle.SyntacticAnalyzer.SourcePosition;
 
 public class DashVname extends Vname {
 
-  public DashVname (Vname vAST, Identifier iAST, SourcePosition thePosition) {
+  public DashVname (Vname vAST, Identifier iAST, ActualParameterSequence apsAST, SourcePosition thePosition) {
     super (thePosition);
     V = vAST;
     I = iAST;
+    APS = apsAST;
   }
 
   public Object visit (Visitor v, Object o) {
@@ -30,4 +31,5 @@ public class DashVname extends Vname {
 
   public Identifier I;
   public Vname V;
+  public ActualParameterSequence APS;
 }
