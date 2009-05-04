@@ -293,9 +293,16 @@ public class Parser {
 
         } else {
 
+	  //Dang it.
+	  //JOE
+	  //This BECOMES jargon is what's the problem.
           Vname vAST = parseRestOfVname(iAST);
-          accept(Token.BECOMES);
-          Expression eAST = parseExpression();
+	  Expression eAST = null;
+          if (currentToken.kind == Token.BECOMES)
+	  { 
+		  accept(Token.BECOMES);
+		  eAST = parseExpression();
+	  }
           finish(commandPos);
           commandAST = new AssignCommand(vAST, eAST, commandPos);
         }
