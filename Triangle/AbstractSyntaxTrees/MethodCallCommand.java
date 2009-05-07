@@ -1,5 +1,5 @@
 /*
- * @(#)DashVname.java                        2.1 2003/10/07
+ * @(#)MethodCallCommand.java                        2.1 2003/10/07
  *
  * Copyright (C) 1999, 2003 D.A. Watt and D.F. Brown
  * Dept. of Computing Science, University of Glasgow, Glasgow G12 8QQ Scotland
@@ -32,6 +32,5 @@ public class MethodCallCommand extends Command {
 
   public Identifier I;
   public Identifier I2;
-  public Vname V;
   public ActualParameterSequence APS;
 }

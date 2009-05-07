@@ -28,7 +28,7 @@ import Triangle.AbstractSyntaxTrees.CharacterExpression;
 import Triangle.AbstractSyntaxTrees.CharacterLiteral;
 //JOE
 import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
-import Triangle.AbstractSyntaxTrees.DashVname;
+import Triangle.AbstractSyntaxTrees.MethodCallCommand;
 import Triangle.AbstractSyntaxTrees.Command;
 import Triangle.AbstractSyntaxTrees.ConstActualParameter;
 import Triangle.AbstractSyntaxTrees.ConstDeclaration;
@@ -298,7 +298,7 @@ public class Parser {
 	      accept(Token.LPAREN);
 	      ActualParameterSequence apsAST = parseActualParameterSequence();
               accept(Token.RPAREN);
-	      //vAST = new DashVname(vAST, iAST, apsAST, commandPos);
+	      //vAST = new MethodCallCommand(vAST, iAST, apsAST, commandPos);
 	      // It's technically a command!
 	      commandAST = new MethodCallCommand(iAST, iAST2, apsAST, commandPos);
           finish(commandPos);

@@ -7,4 +7,4 @@ all:
 	$(CC) -classpath $(CLASSPATH) -d $(CLASSDIR) $(SOURCES) -Xlint:unchecked -Xlint:deprecation
 
 clean:
-	rm -f $(CLASSDIR)/*/*.class
+	rm -f $(CLASSDIR)/*/*.class && rm -f $(CLASSDIR)/*/*/*.class

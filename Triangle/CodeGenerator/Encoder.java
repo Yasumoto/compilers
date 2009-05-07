@@ -71,7 +71,7 @@ import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
 //JOE
 import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
-import Triangle.AbstractSyntaxTrees.DashVname;
+import Triangle.AbstractSyntaxTrees.MethodCallCommand;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
 import Triangle.AbstractSyntaxTrees.SimpleTypeDenoter;
@@ -109,6 +109,15 @@ public final class Encoder implements Visitor {
     Frame frame = (Frame) o;
     Integer argsSize = (Integer) ast.APS.visit(this, frame);
     ast.I.visit(this, new Frame(frame.level, argsSize));
+    return null;
+  }
+
+  //JOE
+  // Value-or-variable names
+  public Object visitMethodCallCommand(MethodCallCommand ast, Object o) {
+    Frame frame = (Frame) o;
+    Integer argsSize = (Integer) ast.APS.visit(this, frame);
+    ast.I2.visit(this, new Frame(frame.level, argsSize));
     return null;
   }
 
@@ -694,16 +703,6 @@ public final class Encoder implements Visitor {
     return baseObject;
   }
 
-  //JOE
-  // Value-or-variable names
-  public Object visitDashVname(DashVname ast, Object o) {
-    Frame frame = (Frame) o;
-    RuntimeEntity baseObject = (RuntimeEntity) ast.V.visit(this, frame);
-    ast.offset = ast.V.offset + ((Field) ast.I.decl.entity).fieldOffset;
-                   // I.decl points to the appropriate record field
-    ast.indexed = ast.V.indexed;
-    return baseObject;
-  }
 
   public Object visitSimpleVname(SimpleVname ast, Object o) {
     ast.offset = 0;

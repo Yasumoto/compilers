@@ -62,7 +62,7 @@ import Triangle.AbstractSyntaxTrees.Program;
 import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
 //JOE
-import Triangle.AbstractSyntaxTrees.DashVname;
+import Triangle.AbstractSyntaxTrees.MethodCallCommand;
 import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
@@ -358,8 +358,8 @@ public class LayoutVisitor implements Visitor {
   }
 
   // Value-or-variable names
-  public Object visitDashVname(DashVname ast, Object obj) {
-    return layoutBinary("DashVname", ast.I, ast.V);
+  public Object visitMethodCallCommand(MethodCallCommand ast, Object obj) {
+    return layoutTernary("MethodCallCommand", ast.I, ast.I2, ast.APS);
   }
 
   public Object visitSimpleVname(SimpleVname ast, Object obj) {

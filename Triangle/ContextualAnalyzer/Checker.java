@@ -66,7 +66,7 @@ import Triangle.AbstractSyntaxTrees.RecordExpression;
 import Triangle.AbstractSyntaxTrees.RecordTypeDenoter;
 // JOE
 import Triangle.AbstractSyntaxTrees.ClassTypeDenoter;
-import Triangle.AbstractSyntaxTrees.DashVname;
+import Triangle.AbstractSyntaxTrees.MethodCallCommand;
 import Triangle.AbstractSyntaxTrees.SequentialCommand;
 import Triangle.AbstractSyntaxTrees.SequentialDeclaration;
 import Triangle.AbstractSyntaxTrees.SimpleTypeDenoter;
@@ -110,6 +110,22 @@ public final class Checker implements Visitor {
   public Object visitCallCommand(CallCommand ast, Object o) {
 
     Declaration binding = (Declaration) ast.I.visit(this, null);
+    if (binding == null)
+      reportUndeclared(ast.I);
+    else if (binding instanceof ProcDeclaration) {
+      ast.APS.visit(this, ((ProcDeclaration) binding).FPS);
+    } else if (binding instanceof ProcFormalParameter) {
+      ast.APS.visit(this, ((ProcFormalParameter) binding).FPS);
+    } else
+      reporter.reportError("\"%\" is not a procedure identifier",
+                           ast.I.spelling, ast.I.position);
+    return null;
+  }
+
+  //JOE
+  public Object visitMethodCallCommand(MethodCallCommand ast, Object o) {
+    //hm.. BS?
+    Declaration binding = (Declaration) ast.I2.visit(this, null);
     if (binding == null)
       reportUndeclared(ast.I);
     else if (binding instanceof ProcDeclaration) {
@@ -704,21 +720,6 @@ public final class Checker implements Visitor {
     return ast.type;
   }
 
-  //JOE
-  public Object visitDashVname(DashVname ast, Object o) {
-    ast.type = null;
-    TypeDenoter vType = (TypeDenoter) ast.V.visit(this, null);
-    ast.variable = ast.V.variable;
-    if (! (vType instanceof RecordTypeDenoter))
-      reporter.reportError ("record expected here", "", ast.V.position);
-    else {
-      ast.type = checkFieldIdentifier(((RecordTypeDenoter) vType).FT, ast.I);
-      if (ast.type == StdEnvironment.errorType)
-        reporter.reportError ("no field \"%\" in this record type",
-                              ast.I.spelling, ast.I.position);
-    }
-    return ast.type;
-  }
 
   public Object visitSimpleVname(SimpleVname ast, Object o) {
     ast.variable = false;
