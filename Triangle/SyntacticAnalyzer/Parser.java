@@ -292,10 +292,23 @@ public class Parser {
 	}*/
 
         } else {
+      if (currentToken.kind == Token.DASH) {
+	      acceptIt();
+	      Identifier iAST2 = parseIdentifier();
+	      accept(Token.LPAREN);
+	      ActualParameterSequence apsAST = parseActualParameterSequence();
+              accept(Token.RPAREN);
+	      //vAST = new DashVname(vAST, iAST, apsAST, commandPos);
+	      // It's technically a command!
+	      commandAST = new MethodCallCommand(iAST, iAST2, apsAST, commandPos);
+          finish(commandPos);
+      } else{
 
 	  //Dang it.
 	  //JOE
 	  //This BECOMES jargon is what's the problem.
+	  // this assumes that you have an identifier, that now equals a value.
+	  // so like  num := 2
           Vname vAST = parseRestOfVname(iAST);
 	  Expression eAST = null;
           if (currentToken.kind == Token.BECOMES)
@@ -305,6 +318,7 @@ public class Parser {
 	  }
           finish(commandPos);
           commandAST = new AssignCommand(vAST, eAST, commandPos);
+      }
         }
       }
       break;
@@ -579,20 +593,12 @@ public class Parser {
 
 // Begin JOE changes
     while (currentToken.kind == Token.DOT ||
-           currentToken.kind == Token.LBRACKET ||
-	   currentToken.kind == Token.DASH) {
+           currentToken.kind == Token.LBRACKET){
 
       if (currentToken.kind == Token.DOT) {
         acceptIt();
         Identifier iAST = parseIdentifier();
         vAST = new DotVname(vAST, iAST, vnamePos);
-      } else if (currentToken.kind == Token.DASH) {
-	      acceptIt();
-	      Identifier iAST = parseIdentifier();
-	      accept(Token.LPAREN);
-	      ActualParameterSequence apsAST = parseActualParameterSequence();
-              accept(Token.RPAREN);
-	      vAST = new DashVname(vAST, iAST, apsAST, vnamePos);
       } else {
         acceptIt();
         Expression eAST = parseExpression();

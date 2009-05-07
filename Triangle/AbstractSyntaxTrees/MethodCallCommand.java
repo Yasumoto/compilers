@@ -16,20 +16,22 @@ package Triangle.AbstractSyntaxTrees;
 
 import Triangle.SyntacticAnalyzer.SourcePosition;
 
-public class DashVname extends Vname {
+public class MethodCallCommand extends Command {
 
-  public DashVname (Vname vAST, Identifier iAST, ActualParameterSequence apsAST, SourcePosition thePosition) {
+  // actually converting this should work.
+  public MethodCallCommand (Identifier iAST, Identifier iAST2, ActualParameterSequence apsAST, SourcePosition thePosition) {
     super (thePosition);
-    V = vAST;
     I = iAST;
+    I2 = iAST2;
     APS = apsAST;
   }
 
   public Object visit (Visitor v, Object o) {
-    return v.visitDashVname(this, o);
+    return v.visitMethodCallCommand(this, o);
   }
 
   public Identifier I;
+  public Identifier I2;
   public Vname V;
   public ActualParameterSequence APS;
 }
