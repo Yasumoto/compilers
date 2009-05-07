@@ -296,7 +296,7 @@ public class Parser {
           finish(commandPos);
           commandAST = new CallCommand(iAST, apsAST, commandPos);
 
-        } else if (currentToken.kind == Token.DASH) {
+        } else if (currentToken.kind == Token.OPERATOR) {
 	      System.out.println("parseSingleCommand - DASH");
 	      acceptIt();
 	      Identifier iAST2 = parseIdentifier();

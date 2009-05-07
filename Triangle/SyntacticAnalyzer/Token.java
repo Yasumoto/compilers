@@ -132,7 +132,7 @@ final class Token extends Object {
     "type",
     "var",
     "while",
-    "_",
+    "-",
     ".",
     ":",
     ";",
