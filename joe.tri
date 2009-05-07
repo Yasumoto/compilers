@@ -9,7 +9,7 @@ let
 
 	var y : apple
 in
-       begin
-       y-setColor (1);
-       y-printColor ()
-       end
+	begin
+        y_setColor (1);
+	y_printColor ()
+	end

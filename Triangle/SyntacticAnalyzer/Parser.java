@@ -91,19 +91,19 @@ public class Parser {
   private ErrorReporter errorReporter;
   private Token currentToken;
   private SourcePosition previousTokenPosition;
-
+  
   public Parser(Scanner lexer, ErrorReporter reporter) {
-    lexicalAnalyser = lexer;
-    errorReporter = reporter;
-    previousTokenPosition = new SourcePosition();
+   lexicalAnalyser = lexer;
+   errorReporter = reporter;
+   previousTokenPosition = new SourcePosition();
   }
-
-// accept checks whether the current token matches tokenExpected.
-// If so, fetches the next token.
-// If not, reports a syntactic error.
-
+  
+  // accept checks whether the current token matches tokenExpected.
+  // If so, fetches the next token.
+  // If not, reports a syntactic error.
+  
   void accept (int tokenExpected) throws SyntaxError {
-    if (currentToken.kind == tokenExpected) {
+  if (currentToken.kind == tokenExpected) {
       previousTokenPosition = currentToken.position;
       currentToken = lexicalAnalyser.scan();
     } else {
@@ -268,6 +268,9 @@ public class Parser {
   }
 
   Command parseSingleCommand() throws SyntaxError {
+	      System.out.println("parseSingleCommand.");
+	      System.out.println(currentToken.spelling+ " : "+ currentToken.kind);
+	      System.out.println(Token.DASH);
     Command commandAST = null; // in case there's a syntactic error
 
     SourcePosition commandPos = new SourcePosition();
@@ -277,36 +280,34 @@ public class Parser {
 
     case Token.IDENTIFIER:
       {
+	      System.out.println("parseSingleCommand - IDENTIFIER");
+	      System.out.println(currentToken.spelling + " : " + currentToken.kind);
+
         Identifier iAST = parseIdentifier();
+	      System.out.println("ifs!");
+	      System.out.println(currentToken.spelling + " : " + currentToken.kind);
+
         if (currentToken.kind == Token.LPAREN) {
+	      System.out.println("parseSingleCommand - LPAREN");
+	      System.out.println(currentToken.spelling + " : " + currentToken.kind);
           acceptIt();
           ActualParameterSequence apsAST = parseActualParameterSequence();
           accept(Token.RPAREN);
           finish(commandPos);
           commandAST = new CallCommand(iAST, apsAST, commandPos);
-/*// JOE      
-	} else if (currentToken.kind == Token.DOT) {
-		acceptIt();
-		acceptIt();
-		// Look into: parseRestOfVname(Identifier identifierAST)
-	}*/
 
-        } else {
-      if (currentToken.kind == Token.DASH) {
+        } else if (currentToken.kind == Token.DASH) {
+	      System.out.println("parseSingleCommand - DASH");
 	      acceptIt();
 	      Identifier iAST2 = parseIdentifier();
 	      accept(Token.LPAREN);
 	      ActualParameterSequence apsAST = parseActualParameterSequence();
               accept(Token.RPAREN);
-	      //vAST = new MethodCallCommand(vAST, iAST, apsAST, commandPos);
-	      // It's technically a command!
 	      commandAST = new MethodCallCommand(iAST, iAST2, apsAST, commandPos);
           finish(commandPos);
-      } else{
+      } else {
 
-	  //Dang it.
-	  //JOE
-	  //This BECOMES jargon is what's the problem.
+		System.out.println("parseRestOfVname");
 	  // this assumes that you have an identifier, that now equals a value.
 	  // so like  num := 2
           Vname vAST = parseRestOfVname(iAST);
@@ -319,14 +320,15 @@ public class Parser {
           finish(commandPos);
           commandAST = new AssignCommand(vAST, eAST, commandPos);
       }
-        }
-      }
+    }
       break;
 
     case Token.BEGIN:
+    {
       acceptIt();
       commandAST = parseCommand();
       accept(Token.END);
+    }
       break;
 
     case Token.LET:
