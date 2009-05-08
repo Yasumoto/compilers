@@ -349,6 +349,14 @@ public final class Checker implements Visitor {
     return null;
   }
 
+  //JOE
+  /*
+   *
+   * Hm.. could this be something?
+   * Yep, it is.
+   * woo hoo.
+   *
+   */
   public Object visitTypeDeclaration(TypeDeclaration ast, Object o) {
     ast.T = (TypeDenoter) ast.T.visit(this, null);
     idTable.enter (ast.I.spelling, ast);
