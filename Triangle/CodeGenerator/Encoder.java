@@ -347,7 +347,9 @@ public final class Encoder implements Visitor {
 
   public Object visitTypeDeclaration(TypeDeclaration ast, Object o) {
     // just to ensure the type's representation is decided
+    System.out.println("visitTypeDeclaration1");
     ast.T.visit(this, null);
+    System.out.println("visitTypeDeclaration2");
     return new Integer(0);
   }
 
