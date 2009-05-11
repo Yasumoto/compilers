@@ -594,13 +594,13 @@ public final class Encoder implements Visitor {
   public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) {
     int typeSize;
     if (ast.entity == null) {
-      System.out.println("1");
+      System.out.println("visitClassTypeDenoter1");
       typeSize = ((Integer) ast.D.visit(this, new Integer(0))).intValue();
-      System.out.println("2");
+      System.out.println("visitClassTypeDenoter2");
       ast.entity = new TypeRepresentation(typeSize);
-      System.out.println("3");
+      System.out.println("visitClassTypeDenoter3");
       writeTableDetails(ast);
-      System.out.println("4");
+      System.out.println("visitClassTypeDenoter4");
     } else
       typeSize = ast.entity.size;
     return new Integer(typeSize);
