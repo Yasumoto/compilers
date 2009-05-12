@@ -631,6 +631,7 @@ public class Parser {
       declarationAST = new SequentialDeclaration(declarationAST, d2AST,
         declarationPos);
     }
+    System.out.println("DECLARATION AST: " + declarationAST);
     return declarationAST;
   }
 
