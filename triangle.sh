@@ -2,4 +2,4 @@
 
 make clean && make && cd cls && java Triangle.Compiler ../joe.tri
 
-#java TAM.Interpreter
+java TAM.Interpreter obj.tam
