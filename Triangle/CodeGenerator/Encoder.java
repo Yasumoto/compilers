@@ -347,9 +347,7 @@ public final class Encoder implements Visitor {
 
   public Object visitTypeDeclaration(TypeDeclaration ast, Object o) {
     // just to ensure the type's representation is decided
-    System.out.println("visitTypeDeclaration1");
     ast.T.visit(this, null);
-    System.out.println("visitTypeDeclaration2");
     return new Integer(0);
   }
 
@@ -594,14 +592,9 @@ public final class Encoder implements Visitor {
   public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) {
     int typeSize;
     if (ast.entity == null) {
-      System.out.println(ast.D);
-      System.out.println("visitClassTypeDenoter1");
       typeSize = ((Integer) ast.D.visit(this, new Frame (0, 0))).intValue();
-      System.out.println("visitClassTypeDenoter2");
       ast.entity = new TypeRepresentation(typeSize);
-      System.out.println("visitClassTypeDenoter3");
       writeTableDetails(ast);
-      System.out.println("visitClassTypeDenoter4");
     } else
       typeSize = ast.entity.size;
     return new Integer(typeSize);

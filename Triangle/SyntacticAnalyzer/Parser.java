@@ -268,9 +268,6 @@ public class Parser {
   }
 
   Command parseSingleCommand() throws SyntaxError {
-	      System.out.println("parseSingleCommand.");
-	      System.out.println(currentToken.spelling+ " : "+ currentToken.kind);
-	      System.out.println(Token.DASH);
     Command commandAST = null; // in case there's a syntactic error
 
     SourcePosition commandPos = new SourcePosition();
@@ -280,16 +277,9 @@ public class Parser {
 
     case Token.IDENTIFIER:
       {
-	      System.out.println("parseSingleCommand - IDENTIFIER");
-	      System.out.println(currentToken.spelling + " : " + currentToken.kind);
-
         Identifier iAST = parseIdentifier();
-	      System.out.println("ifs!");
-	      System.out.println(currentToken.spelling + " : " + currentToken.kind);
 
         if (currentToken.kind == Token.LPAREN) {
-	      System.out.println("parseSingleCommand - LPAREN");
-	      System.out.println(currentToken.spelling + " : " + currentToken.kind);
           acceptIt();
           ActualParameterSequence apsAST = parseActualParameterSequence();
           accept(Token.RPAREN);
@@ -297,7 +287,6 @@ public class Parser {
           commandAST = new CallCommand(iAST, apsAST, commandPos);
 
         } else if (currentToken.kind == Token.OPERATOR) {
-	      System.out.println("parseSingleCommand - DASH");
 	      acceptIt();
 	      Identifier iAST2 = parseIdentifier();
 	      accept(Token.LPAREN);
@@ -307,7 +296,6 @@ public class Parser {
           finish(commandPos);
       } else {
 
-		System.out.println("parseRestOfVname");
 	  // this assumes that you have an identifier, that now equals a value.
 	  // so like  num := 2
           Vname vAST = parseRestOfVname(iAST);
@@ -631,7 +619,6 @@ public class Parser {
       declarationAST = new SequentialDeclaration(declarationAST, d2AST,
         declarationPos);
     }
-    System.out.println("DECLARATION AST: " + declarationAST);
     return declarationAST;
   }
 
@@ -974,7 +961,6 @@ public class Parser {
 	//accept(Token.IS); //Tilde
 
         Declaration dAST = parseDeclaration();
-	System.out.println("It parsed the declaration.");
 	accept(Token.END);
         finish(typePos);
         typeAST = new ClassTypeDenoter(dAST, typePos);
