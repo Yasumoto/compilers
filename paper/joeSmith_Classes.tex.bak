@@ -1,6 +1,6 @@
 \documentclass[10pt,letterpaper]{article}
 \author{Joe Smith\\smith237@chapman.edu}
-\title{\textbf{CPSC 402: Compiler Construction\\Implementing Classes in Triangle}}
+\title{\textbf{CPSC 402: Compiler Contruction\\Implementing Classes in Triangle}}
 \usepackage{listings}
 \usepackage{graphics}
 \usepackage{graphicx}
@@ -11,14 +11,14 @@
 \maketitle
 
 \begin{abstract}
-This paper details my experiences with extending the Triangle language with classes, followed by updating the implementation to become consistent with my design. After much trial, tribulation, and help from my professor and peers, I created a small yet functional vision of classes, one that implements both member variables and methods.
+This paper details my experiences with extending the Triangle language with classes, followed by updating the implementation to become consistent with my design. After much trial, tribulation, and help from my professor and peers, I created a small yet functional vision of clases, one that implements both member variables and methods.
 \end{abstract}
 
 \section{Introduction}
-Implementing support for classes is no walk in the park. Although I took many long walks working out my design, in the end I am glad to say that I feel accomplished with my semester-long project. Object-oriented programming is a familiar topic to most students and software engineers, it has been one of the dominant design paradigms since the 1990s. It allows for flexible and reusable code, and also helps design software in a way that is similar to real life.
+Implementing support for classes is no walk in the park. Although I took many long walks working out my design, in the end I am glad to say that I feel accomplished with my semester-long project. Object-oriented programming is a familiar topic to most students and software engineers, it has been one of the dominant design paradigms since the 1990s. It allows for flexible and reuseable code, and also helps design software in a way that is similar to real life.
 
 \section{Triangle Language Changes}
-My triangle language extension is to add classes to Triangle. I implemented two different additions, both of which are necessary to fully integrate classes into the language. The first is the Class Type Denoter, which is used to declare the methods and member variables of a class, as well as the Method Call Command, which is used in order to actually call methods of an object. 
+My triangle language extension is to add classes to Triangle. I implemented two different additions, both of which are neccesary to fully integrate classes into the language. The first is the Class Type Denoter, which is used to declare the methods and member variables of a class, as well as the Method Call Command, which is used in order to actually call methods of an object. 
 \subsection{Syntax}
 
 My actual syntax for the command is
@@ -37,7 +37,7 @@ MethodCallCommand
    ::= Identifier-Identifier( Actual-Parameter-Sequence )
 \end{lstlisting}
 
-Deciding to use the Declaration was the saving idea of this project. After running through multiple implementation ideas with Dr. Radenski, we settled on using the Declaration, which would give us access to variables and methods, both of which I deemed necessary to any reasonable implementation. This turned out to be much simpler than trying to manually adding in a Vname and a Proc AST.
+Deciding to use the Declaration was the saving idea of this project. After running through multiple implementation ideas with Dr. Radenski, we settled on using the Declaration, which would give us access to variables and methods, both of which I deemed neccesary to any reasonable implementation. This turned out to be much simpler than trying to manually adding in a Vname and a Proc AST.
 
 \subsection{Semantics}
 Currently, my implementation only allows for methods to access member variables (the infamous 'get' and 'set' methods). I deemed this to be keeping with the older, more restricted version of classes, one in which all variables are private. For the ClassTypeDenoter, the declaration can be any valid series of declarations, whether they are procedures, functions, constants, types, or variables.
@@ -68,7 +68,7 @@ in
 \subsection{Scanner, Parser, and Abstract Syntax Trees}
 A large portion of my time was spent working with the Syntactic Analyzer. This was done concurrently with my attempts to build the proper language design, in this case my ideas for the design were closely linked to the actual implementation of Triangle and any hindrances I discovered.
 
-The scanner was actually a very interesting aspect of the program to work with. I ran into the issue of the Dot Vname, which is used to gain access to members of records, which conflicted with my initial idea to access methods of an object. I eventually decided to use a minus sign or a dash, '-', to show when I was dealing with a class, as it did not interfere with any of my actual implementation. In the future, if this were to be expanded into a larger project, it would be important to have a proper way to delineate methods. I also added a new Token, TOKEN.class, which would delineate when I was using a class. This proved to be fortuitous in my work with the parser.
+The scanner was actually a very interesting aspect of the program to work with. I ran into the issue of the Dot Vname, which is used to gain access to members of records, which conflicted with my initial idea to access methods of an object. I eventually decided to use a minus sign or a dash, '-', to show when I was dealing with a class, as it did not interfere with any of my actual implementation. In the future, if this were to be expanded into a larger project, it would be important to have a proper way to delineate methods. I also added a new Token, TOKEN.class, which would delineate when I was using a class. This proved to be fortuitious in my work with the parser.
 
 My ASTs for both the ClassTypeDenoter as well as the Method Call Command are seen in figures 1 and 2.
 
@@ -94,7 +94,7 @@ For my Parser, I made a few changes in the code, which can be seen in the append
 The visit method of the ClassTypeDenoter, as can be seen in the appendix, was easier than I'd hoped, with a simple visit to the Declaration AST making everything work out properly. The MethodCallCommand was a bit more involved, as I needed to be sure that I visited the first identifier, which was the object, followed by visiting the second identifier, which in this case is the method. After that, I needed to visit the parameters.
 
 \subsection{Run-Time Organization and Code Generation}
-Code Generation was a very involved process for classes, and consumed the most time for this project. I was following along with the code generation for the RecordTypeDenoter, which I knew I'd have to modify thanks to the addition of the more complicated Declaration for classes. Unfortunately, I could not discern the proper way to actually get the generation to work.
+Code Generation was a very involved process for classes, and consumed the most time for this project. I was following along with the code generation for the RecordTypeDenoter, which I knew I'd have to modify thanks to the addition of the more complicated Declaration for classes. Unfortunately, I could not discern the proper way to acutally get the generation to work.
 
 Fortunately, Dr. Radenski pointed out that a new frame is needed in order for it to work properly. All that was needed was to create a new frame, and everything worked beautifully.
 \subsection{Interpretation}

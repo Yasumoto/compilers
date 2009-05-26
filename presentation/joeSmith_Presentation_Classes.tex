@@ -1,0 +1,298 @@
+% $Header: /cvsroot/latex-beamer/latex-beamer/solutions/generic-talks/generic-ornate-15min-45min.en.tex,v 1.5 2007/01/28 20:48:23 tantau Exp $
+
+\include{graphics}
+\documentclass{beamer}
+
+% This file is a solution template for:
+
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage[english]{babel}
+% or whatever
+
+\usepackage[latin1]{inputenc}
+% or whatever
+
+%Joe
+%\usepackage{times}
+%\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\usepackage{listings}
+
+\title[] % (optional, use only with long paper titles)
+{Getting Classy}
+
+\subtitle
+{Classes: A Triangle Extension} % (optional)
+
+\author{Joe Smith} % (optional, use only with lots of authors)
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[] % (optional, but mostly needed)
+{
+  Department of Computer Science\\
+  Chapman University}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[] % (optional)
+{Compiler Construction\\ \today}
+
+%\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+ \pgfdeclareimage[height=0.5cm]{university-logo}{chapman}
+ \logo{\pgfuseimage{university-logo}}
+
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+%\begin{frame}
+%  \titlepage
+%\end{frame}
+
+%\begin{frame}{Outline}
+%  \tableofcontents
+  % You might wish to add the option [pausesections]
+%\end{frame}
+
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Introduction}
+\begin{frame}{Intro}
+	\begin{itemize}
+	\item
+	Extending the Triangle language with an extension of classes ... is ... fun? 
+	\item
+	This turned out to be relatively ridiculous, though not as brutal as I'd initially feared.
+	\end{itemize}
+\end{frame}
+
+\subsection{History}
+\begin{frame}{History}
+	\begin{itemize}
+	\item
+	Smalltalk was one of the first mainstream examples of an implementation of classes of objects.
+	\item
+	It also introduced the term \alert{object-oriented programming}.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{History}
+	\begin{itemize}
+	\item
+	From there, the favorite programming language of Brian and I, Lisp, picked it up.
+	\item
+	With the advent of C++, the object-oriented programming paradigm took off.
+	\end{itemize}
+\end{frame}
+
+\section{Triangle Language Changes}
+\begin{frame}
+	\begin{itemize}
+	\item
+	Two types of syntax:
+	\item
+	Class Type Denoter
+	\item
+	Method Call Command
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{ASTs}
+\end{frame}
+
+\begin{frame}[Class Type Denoter]{Syntax}
+\alert{Class Type Denoter} \\
+type IDENTIFIER ~ class\\
+	DECLARATION\\
+	end;
+\end{frame}
+
+\begin{frame}[Method Call Command]{Syntax}
+\alert{Method Call Command} \\
+IDENTIFIER-IDENTIFIER\\
+\end{frame}
+
+\begin{frame}{Example}
+\alert{Class Type Denoter} \\
+	type apple ~ class\\
+		var color : Integer;\\
+		proc setColor (setTo : Integer) ~ color := setTo;\\
+		proc printColor () ~ putint(color)\\
+		end;
+\end{frame}
+
+\begin{frame}[Method Call Command]{Syntax}
+\alert{Method Call Command} \\
+	y-setColor (7)
+\end{frame}
+
+
+\section{Triangle Implementation Changes}
+\subsection{Scanner, Parser, and Abstract Syntax Trees}
+\begin{frame}[Class Type Denoter]{Syntactic Analyzer}
+\alert{Class Type Denoter} \\
+case Token.CLASS:\\
+    accept(Token.CLASS);\\
+\\
+    Declaration dAST = parseDeclaration();\\
+    accept(Token.END);\\
+    finish(typePos);\\
+    typeAST = new ClassTypeDenoter(dAST, typePos);\\
+  break;
+\end{frame}
+\begin{frame}[Method Call Command]{Syntactic Analyzer}
+\alert{Method Call Command} \\
+else if (currentToken.kind == Token.OPERATOR)\\
+    acceptIt();\\
+    Identifier iAST2 = parseIdentifier();\\
+    accept(Token.LPAREN);\\
+    ActualParameterSequence apsAST = parseActualParameterSequence();\\
+    accept(Token.RPAREN);\\
+    commandAST = new MethodCallCommand(iAST, iAST2, apsAST, commandPos);\\
+finish(commandPos);
+\end{frame}
+
+
+\subsection{Contextual Analyzer}
+\begin{frame}[Class Type Denoter]{Contextual Analyzer}
+\alert{Class Type Denoter} \\
+public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o)\\
+  /*ast.D = (Declaration)*/\\
+  ast.D.visit(this, null);\\
+  return ast;
+\end{frame}
+
+\begin{frame}[Method Call Command]{Contextual Analyzer}
+\alert{Method Call Command} \\
+public Object visitMethodCallCommand(MethodCallCommand ast, Object o) \\
+  //hm.. BS?\\
+  Declaration binding = (Declaration) ast.I2.visit(this, null);\\
+  if (binding == null)\\
+    reportUndeclared(ast.I);\\
+  else if (binding instanceof ProcDeclaration) \\
+    ast.APS.visit(this, ((ProcDeclaration) binding).FPS);\\
+   else if (binding instanceof ProcFormalParameter) \\
+    ast.APS.visit(this, ((ProcFormalParameter) binding).FPS);\\
+   else\\
+    reporter.reportError("\"%\" is not a procedure identifier",\\
+                         ast.I.spelling, ast.I.position);\\
+  return null;
+\end{frame}
+
+\subsection{Run-Time Organization and Code Generation}
+
+\begin{frame}{Code Generation}
+\alert{Class Type Denoter} \\
+public Object visitClassTypeDenoter(ClassTypeDenoter ast, Object o) \\
+  int typeSize;\\
+  if (ast.entity == null) \\
+    typeSize = ((Integer) ast.D.visit(this, new Frame (0, 0))).intValue();\\
+    ast.entity = new TypeRepresentation(typeSize);\\
+    writeTableDetails(ast);\\
+   else\\
+    typeSize = ast.entity.size;\\
+  return new Integer(typeSize);
+\end{frame}
+
+\begin{frame}{Code Generation}
+\alert{Method Call Command} \\
+public Object visitMethodCallCommand(MethodCallCommand ast, Object o) \\
+  Frame frame = (Frame) o;\\
+  Integer argsSize = (Integer) ast.APS.visit(this, frame);\\
+  ast.I2.visit(this, new Frame(frame.level, argsSize));\\
+  return null;
+\end{frame}
+
+\subsection{Interpretation}
+\begin{frame}
+	I looked into the Interpreter class, and got scared.
+\end{frame}
+
+\begin{frame}{Disassembler}
+********** TAM Disassembler (Sun Version 2.1) **********\\
+0:  PUSH        1\\
+1:  JUMP        5[CB]\\
+2:  LOAD  (1)   -1[LB]\\
+3:  STORE (1)   0[SB]\\
+4:  RETURN(0)   1\\
+5:  JUMP        9[CB]\\
+6:  LOAD  (1)   0[SB]\\
+7:  CALL        putint  \\
+8:  RETURN(0)   0\\
+9:  PUSH        1\\
+10:  LOADL       7\\
+11:  CALL  (SB)  2[CB]\\
+12:  CALL  (SB)  6[CB]\\
+13:  POP   (0)   1\\
+14:  HALT  
+\end{frame}
+
+
+\section{Conclusions}
+\begin{frame}{Additions}
+	\begin{itemize}
+	\item
+	I'd \alert{really} like to get inheritance rolling.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Thanks!}
+	Thanks!
+\end{frame}
+\end{document}

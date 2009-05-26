@@ -1,7 +1,7 @@
 CC=pdflatex
 
 all:
-	$(CC) *.tex
+	$(CC) joeSmith_Classes && bibtex joeSmith_Classes && $(CC) joeSmith_Classes && $(CC) joeSmith_Classes
 
 clean:
-	rm *.log *.aux *.pdf
+	rm -f *.log *.aux joeSmith_Classes.pdf
